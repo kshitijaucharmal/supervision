@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../../assets/supervision-lenny.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.40">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
     
     
       
@@ -30,7 +30,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.8c3ca2c6.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
@@ -3996,11 +3996,95 @@
   
   
     <li class="md-nav__item">
+      <a href="../../metrics/precision/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Precision
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--new"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/recall/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Recall
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--new"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../metrics/f1_score/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
     F1 Score
+  </span>
+  
+    
+  
+  
+    <span class="md-status md-status--new"></span>
+  
+
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../metrics/common_values/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Common Values
   </span>
   
     
@@ -7597,7 +7681,7 @@
 <a id="supervision.annotators.core.BoxAnnotator"></a>
     <div class="doc doc-contents first">
             <p class="doc doc-class-bases">
-              Bases: <code>BaseAnnotator</code></p>
+              Bases: <code><span title="supervision.annotators.base.BaseAnnotator">BaseAnnotator</span></code></p>
 
 
         <p>A class for drawing bounding boxes on an image using provided detections.</p>
@@ -7814,7 +7898,7 @@
 <h4 id="supervision.annotators.core.BoxAnnotator.__init__(color)" class="doc doc-heading doc-heading-parameter">                  <code>color</code>
 <a href="#supervision.annotators.core.BoxAnnotator.__init__(color)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Union[Color, ColorPalette]</code>
+                  <code><span title="typing.Union">Union</span>[<a class="autorefs autorefs-internal" title="supervision.draw.color.Color" href="../../utils/draw/#supervision.draw.color.Color">Color</a>, <a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette" href="../../utils/draw/#supervision.draw.color.ColorPalette">ColorPalette</a>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -7823,7 +7907,7 @@ annotating detections.</p>
               </div>
             </td>
             <td>
-                  <code>DEFAULT</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette.DEFAULT" href="../../utils/draw/#supervision.draw.color.ColorPalette.DEFAULT">DEFAULT</a></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -7847,7 +7931,7 @@ annotating detections.</p>
 <h4 id="supervision.annotators.core.BoxAnnotator.__init__(color_lookup)" class="doc doc-heading doc-heading-parameter">                  <code>color_lookup</code>
 <a href="#supervision.annotators.core.BoxAnnotator.__init__(color_lookup)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ColorLookup</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.annotators.utils.ColorLookup" href="#supervision.annotators.utils.ColorLookup">ColorLookup</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -7856,7 +7940,7 @@ Options are <code>INDEX</code>, <code>CLASS</code>, <code>TRACK</code>.</p>
               </div>
             </td>
             <td>
-                  <code>CLASS</code>
+                  <code><span title="supervision.annotators.utils.ColorLookup.CLASS">CLASS</span></code>
             </td>
           </tr>
       </tbody>
@@ -7933,7 +8017,7 @@ Options are <code>INDEX</code>, <code>CLASS</code>, <code>TRACK</code>.</p>
 <h4 id="supervision.annotators.core.BoxAnnotator.annotate(scene)" class="doc doc-heading doc-heading-parameter">                  <code>scene</code>
 <a href="#supervision.annotators.core.BoxAnnotator.annotate(scene)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -7951,7 +8035,7 @@ is a flexible type, accepting either <code>numpy.ndarray</code> or
 <h4 id="supervision.annotators.core.BoxAnnotator.annotate(detections)" class="doc doc-heading doc-heading-parameter">                  <code>detections</code>
 <a href="#supervision.annotators.core.BoxAnnotator.annotate(detections)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Detections</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.detection.core.Detections" href="../core/#supervision.detection.core.Detections">Detections</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -7967,7 +8051,7 @@ is a flexible type, accepting either <code>numpy.ndarray</code> or
 <h4 id="supervision.annotators.core.BoxAnnotator.annotate(custom_color_lookup)" class="doc doc-heading doc-heading-parameter">                  <code>custom_color_lookup</code>
 <a href="#supervision.annotators.core.BoxAnnotator.annotate(custom_color_lookup)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Optional[ndarray]</code>
+                  <code><span title="typing.Optional">Optional</span>[<span title="numpy.ndarray">ndarray</span>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -7994,7 +8078,7 @@ Allows to override the default color mapping strategy.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -8165,7 +8249,7 @@ supervision-annotator-examples/bounding-box-annotator-example-purple.png" /></p>
 <a id="supervision.annotators.core.RoundBoxAnnotator"></a>
     <div class="doc doc-contents first">
             <p class="doc doc-class-bases">
-              Bases: <code>BaseAnnotator</code></p>
+              Bases: <code><span title="supervision.annotators.base.BaseAnnotator">BaseAnnotator</span></code></p>
 
 
         <p>A class for drawing bounding boxes with round edges on an image
@@ -8481,7 +8565,7 @@ using provided detections.</p>
 <h4 id="supervision.annotators.core.RoundBoxAnnotator.__init__(color)" class="doc doc-heading doc-heading-parameter">                  <code>color</code>
 <a href="#supervision.annotators.core.RoundBoxAnnotator.__init__(color)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Union[Color, ColorPalette]</code>
+                  <code><span title="typing.Union">Union</span>[<a class="autorefs autorefs-internal" title="supervision.draw.color.Color" href="../../utils/draw/#supervision.draw.color.Color">Color</a>, <a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette" href="../../utils/draw/#supervision.draw.color.ColorPalette">ColorPalette</a>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -8490,7 +8574,7 @@ annotating detections.</p>
               </div>
             </td>
             <td>
-                  <code>DEFAULT</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette.DEFAULT" href="../../utils/draw/#supervision.draw.color.ColorPalette.DEFAULT">DEFAULT</a></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -8514,7 +8598,7 @@ annotating detections.</p>
 <h4 id="supervision.annotators.core.RoundBoxAnnotator.__init__(color_lookup)" class="doc doc-heading doc-heading-parameter">                  <code>color_lookup</code>
 <a href="#supervision.annotators.core.RoundBoxAnnotator.__init__(color_lookup)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ColorLookup</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.annotators.utils.ColorLookup" href="#supervision.annotators.utils.ColorLookup">ColorLookup</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -8523,7 +8607,7 @@ Options are <code>INDEX</code>, <code>CLASS</code>, <code>TRACK</code>.</p>
               </div>
             </td>
             <td>
-                  <code>CLASS</code>
+                  <code><span title="supervision.annotators.utils.ColorLookup.CLASS">CLASS</span></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -8636,7 +8720,7 @@ based on the provided detections.</p>
 <h4 id="supervision.annotators.core.RoundBoxAnnotator.annotate(scene)" class="doc doc-heading doc-heading-parameter">                  <code>scene</code>
 <a href="#supervision.annotators.core.RoundBoxAnnotator.annotate(scene)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -8654,7 +8738,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.RoundBoxAnnotator.annotate(detections)" class="doc doc-heading doc-heading-parameter">                  <code>detections</code>
 <a href="#supervision.annotators.core.RoundBoxAnnotator.annotate(detections)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Detections</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.detection.core.Detections" href="../core/#supervision.detection.core.Detections">Detections</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -8670,7 +8754,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.RoundBoxAnnotator.annotate(custom_color_lookup)" class="doc doc-heading doc-heading-parameter">                  <code>custom_color_lookup</code>
 <a href="#supervision.annotators.core.RoundBoxAnnotator.annotate(custom_color_lookup)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Optional[ndarray]</code>
+                  <code><span title="typing.Optional">Optional</span>[<span title="numpy.ndarray">ndarray</span>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -8697,7 +8781,7 @@ Allows to override the default color mapping strategy.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -8948,7 +9032,7 @@ supervision-annotator-examples/round-box-annotator-example-purple.png" /></p>
 <a id="supervision.annotators.core.BoxCornerAnnotator"></a>
     <div class="doc doc-contents first">
             <p class="doc doc-class-bases">
-              Bases: <code>BaseAnnotator</code></p>
+              Bases: <code><span title="supervision.annotators.base.BaseAnnotator">BaseAnnotator</span></code></p>
 
 
         <p>A class for drawing box corners on an image using provided detections.</p>
@@ -9181,7 +9265,7 @@ supervision-annotator-examples/round-box-annotator-example-purple.png" /></p>
 <h4 id="supervision.annotators.core.BoxCornerAnnotator.__init__(color)" class="doc doc-heading doc-heading-parameter">                  <code>color</code>
 <a href="#supervision.annotators.core.BoxCornerAnnotator.__init__(color)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Union[Color, ColorPalette]</code>
+                  <code><span title="typing.Union">Union</span>[<a class="autorefs autorefs-internal" title="supervision.draw.color.Color" href="../../utils/draw/#supervision.draw.color.Color">Color</a>, <a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette" href="../../utils/draw/#supervision.draw.color.ColorPalette">ColorPalette</a>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -9190,7 +9274,7 @@ annotating detections.</p>
               </div>
             </td>
             <td>
-                  <code>DEFAULT</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette.DEFAULT" href="../../utils/draw/#supervision.draw.color.ColorPalette.DEFAULT">DEFAULT</a></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -9230,7 +9314,7 @@ annotating detections.</p>
 <h4 id="supervision.annotators.core.BoxCornerAnnotator.__init__(color_lookup)" class="doc doc-heading doc-heading-parameter">                  <code>color_lookup</code>
 <a href="#supervision.annotators.core.BoxCornerAnnotator.__init__(color_lookup)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ColorLookup</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.annotators.utils.ColorLookup" href="#supervision.annotators.utils.ColorLookup">ColorLookup</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -9239,7 +9323,7 @@ Options are <code>INDEX</code>, <code>CLASS</code>, <code>TRACK</code>.</p>
               </div>
             </td>
             <td>
-                  <code>CLASS</code>
+                  <code><span title="supervision.annotators.utils.ColorLookup.CLASS">CLASS</span></code>
             </td>
           </tr>
       </tbody>
@@ -9322,7 +9406,7 @@ Options are <code>INDEX</code>, <code>CLASS</code>, <code>TRACK</code>.</p>
 <h4 id="supervision.annotators.core.BoxCornerAnnotator.annotate(scene)" class="doc doc-heading doc-heading-parameter">                  <code>scene</code>
 <a href="#supervision.annotators.core.BoxCornerAnnotator.annotate(scene)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -9340,7 +9424,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.BoxCornerAnnotator.annotate(detections)" class="doc doc-heading doc-heading-parameter">                  <code>detections</code>
 <a href="#supervision.annotators.core.BoxCornerAnnotator.annotate(detections)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Detections</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.detection.core.Detections" href="../core/#supervision.detection.core.Detections">Detections</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -9356,7 +9440,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.BoxCornerAnnotator.annotate(custom_color_lookup)" class="doc doc-heading doc-heading-parameter">                  <code>custom_color_lookup</code>
 <a href="#supervision.annotators.core.BoxCornerAnnotator.annotate(custom_color_lookup)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Optional[ndarray]</code>
+                  <code><span title="typing.Optional">Optional</span>[<span title="numpy.ndarray">ndarray</span>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -9383,7 +9467,7 @@ Allows to override the default color mapping strategy.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -9564,7 +9648,7 @@ supervision-annotator-examples/box-corner-annotator-example-purple.png" /></p>
 <a id="supervision.annotators.core.OrientedBoxAnnotator"></a>
     <div class="doc doc-contents first">
             <p class="doc doc-class-bases">
-              Bases: <code>BaseAnnotator</code></p>
+              Bases: <code><span title="supervision.annotators.base.BaseAnnotator">BaseAnnotator</span></code></p>
 
 
         <p>A class for drawing oriented bounding boxes on an image using provided detections.</p>
@@ -9785,7 +9869,7 @@ supervision-annotator-examples/box-corner-annotator-example-purple.png" /></p>
 <h4 id="supervision.annotators.core.OrientedBoxAnnotator.__init__(color)" class="doc doc-heading doc-heading-parameter">                  <code>color</code>
 <a href="#supervision.annotators.core.OrientedBoxAnnotator.__init__(color)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Union[Color, ColorPalette]</code>
+                  <code><span title="typing.Union">Union</span>[<a class="autorefs autorefs-internal" title="supervision.draw.color.Color" href="../../utils/draw/#supervision.draw.color.Color">Color</a>, <a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette" href="../../utils/draw/#supervision.draw.color.ColorPalette">ColorPalette</a>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -9794,7 +9878,7 @@ annotating detections.</p>
               </div>
             </td>
             <td>
-                  <code>DEFAULT</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette.DEFAULT" href="../../utils/draw/#supervision.draw.color.ColorPalette.DEFAULT">DEFAULT</a></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -9818,7 +9902,7 @@ annotating detections.</p>
 <h4 id="supervision.annotators.core.OrientedBoxAnnotator.__init__(color_lookup)" class="doc doc-heading doc-heading-parameter">                  <code>color_lookup</code>
 <a href="#supervision.annotators.core.OrientedBoxAnnotator.__init__(color_lookup)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ColorLookup</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.annotators.utils.ColorLookup" href="#supervision.annotators.utils.ColorLookup">ColorLookup</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -9827,7 +9911,7 @@ Options are <code>INDEX</code>, <code>CLASS</code>, <code>TRACK</code>.</p>
               </div>
             </td>
             <td>
-                  <code>CLASS</code>
+                  <code><span title="supervision.annotators.utils.ColorLookup.CLASS">CLASS</span></code>
             </td>
           </tr>
       </tbody>
@@ -9904,7 +9988,7 @@ Options are <code>INDEX</code>, <code>CLASS</code>, <code>TRACK</code>.</p>
 <h4 id="supervision.annotators.core.OrientedBoxAnnotator.annotate(scene)" class="doc doc-heading doc-heading-parameter">                  <code>scene</code>
 <a href="#supervision.annotators.core.OrientedBoxAnnotator.annotate(scene)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -9922,7 +10006,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.OrientedBoxAnnotator.annotate(detections)" class="doc doc-heading doc-heading-parameter">                  <code>detections</code>
 <a href="#supervision.annotators.core.OrientedBoxAnnotator.annotate(detections)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Detections</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.detection.core.Detections" href="../core/#supervision.detection.core.Detections">Detections</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -9938,7 +10022,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.OrientedBoxAnnotator.annotate(custom_color_lookup)" class="doc doc-heading doc-heading-parameter">                  <code>custom_color_lookup</code>
 <a href="#supervision.annotators.core.OrientedBoxAnnotator.annotate(custom_color_lookup)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Optional[ndarray]</code>
+                  <code><span title="typing.Optional">Optional</span>[<span title="numpy.ndarray">ndarray</span>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -9965,7 +10049,7 @@ Allows to override the default color mapping strategy.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -10143,7 +10227,7 @@ or <code>PIL.Image.Image</code>)</p>
 <a id="supervision.annotators.core.ColorAnnotator"></a>
     <div class="doc doc-contents first">
             <p class="doc doc-class-bases">
-              Bases: <code>BaseAnnotator</code></p>
+              Bases: <code><span title="supervision.annotators.base.BaseAnnotator">BaseAnnotator</span></code></p>
 
 
         <p>A class for drawing box masks on an image using provided detections.</p>
@@ -10370,7 +10454,7 @@ or <code>PIL.Image.Image</code>)</p>
 <h4 id="supervision.annotators.core.ColorAnnotator.__init__(color)" class="doc doc-heading doc-heading-parameter">                  <code>color</code>
 <a href="#supervision.annotators.core.ColorAnnotator.__init__(color)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Union[Color, ColorPalette]</code>
+                  <code><span title="typing.Union">Union</span>[<a class="autorefs autorefs-internal" title="supervision.draw.color.Color" href="../../utils/draw/#supervision.draw.color.Color">Color</a>, <a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette" href="../../utils/draw/#supervision.draw.color.ColorPalette">ColorPalette</a>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -10379,7 +10463,7 @@ annotating detections.</p>
               </div>
             </td>
             <td>
-                  <code>DEFAULT</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette.DEFAULT" href="../../utils/draw/#supervision.draw.color.ColorPalette.DEFAULT">DEFAULT</a></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -10403,7 +10487,7 @@ annotating detections.</p>
 <h4 id="supervision.annotators.core.ColorAnnotator.__init__(color_lookup)" class="doc doc-heading doc-heading-parameter">                  <code>color_lookup</code>
 <a href="#supervision.annotators.core.ColorAnnotator.__init__(color_lookup)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ColorLookup</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.annotators.utils.ColorLookup" href="#supervision.annotators.utils.ColorLookup">ColorLookup</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -10412,7 +10496,7 @@ Options are <code>INDEX</code>, <code>CLASS</code>, <code>TRACK</code>.</p>
               </div>
             </td>
             <td>
-                  <code>CLASS</code>
+                  <code><span title="supervision.annotators.utils.ColorLookup.CLASS">CLASS</span></code>
             </td>
           </tr>
       </tbody>
@@ -10489,7 +10573,7 @@ Options are <code>INDEX</code>, <code>CLASS</code>, <code>TRACK</code>.</p>
 <h4 id="supervision.annotators.core.ColorAnnotator.annotate(scene)" class="doc doc-heading doc-heading-parameter">                  <code>scene</code>
 <a href="#supervision.annotators.core.ColorAnnotator.annotate(scene)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -10507,7 +10591,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.ColorAnnotator.annotate(detections)" class="doc doc-heading doc-heading-parameter">                  <code>detections</code>
 <a href="#supervision.annotators.core.ColorAnnotator.annotate(detections)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Detections</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.detection.core.Detections" href="../core/#supervision.detection.core.Detections">Detections</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -10523,7 +10607,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.ColorAnnotator.annotate(custom_color_lookup)" class="doc doc-heading doc-heading-parameter">                  <code>custom_color_lookup</code>
 <a href="#supervision.annotators.core.ColorAnnotator.annotate(custom_color_lookup)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Optional[ndarray]</code>
+                  <code><span title="typing.Optional">Optional</span>[<span title="numpy.ndarray">ndarray</span>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -10550,7 +10634,7 @@ Allows to override the default color mapping strategy.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -10731,7 +10815,7 @@ supervision-annotator-examples/box-mask-annotator-example-purple.png" /></p>
 <a id="supervision.annotators.core.CircleAnnotator"></a>
     <div class="doc doc-contents first">
             <p class="doc doc-class-bases">
-              Bases: <code>BaseAnnotator</code></p>
+              Bases: <code><span title="supervision.annotators.base.BaseAnnotator">BaseAnnotator</span></code></p>
 
 
         <p>A class for drawing circle on an image using provided detections.</p>
@@ -10958,7 +11042,7 @@ supervision-annotator-examples/box-mask-annotator-example-purple.png" /></p>
 <h4 id="supervision.annotators.core.CircleAnnotator.__init__(color)" class="doc doc-heading doc-heading-parameter">                  <code>color</code>
 <a href="#supervision.annotators.core.CircleAnnotator.__init__(color)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Union[Color, ColorPalette]</code>
+                  <code><span title="typing.Union">Union</span>[<a class="autorefs autorefs-internal" title="supervision.draw.color.Color" href="../../utils/draw/#supervision.draw.color.Color">Color</a>, <a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette" href="../../utils/draw/#supervision.draw.color.ColorPalette">ColorPalette</a>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -10967,7 +11051,7 @@ annotating detections.</p>
               </div>
             </td>
             <td>
-                  <code>DEFAULT</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette.DEFAULT" href="../../utils/draw/#supervision.draw.color.ColorPalette.DEFAULT">DEFAULT</a></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -10991,7 +11075,7 @@ annotating detections.</p>
 <h4 id="supervision.annotators.core.CircleAnnotator.__init__(color_lookup)" class="doc doc-heading doc-heading-parameter">                  <code>color_lookup</code>
 <a href="#supervision.annotators.core.CircleAnnotator.__init__(color_lookup)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ColorLookup</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.annotators.utils.ColorLookup" href="#supervision.annotators.utils.ColorLookup">ColorLookup</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -11000,7 +11084,7 @@ Options are <code>INDEX</code>, <code>CLASS</code>, <code>TRACK</code>.</p>
               </div>
             </td>
             <td>
-                  <code>CLASS</code>
+                  <code><span title="supervision.annotators.utils.ColorLookup.CLASS">CLASS</span></code>
             </td>
           </tr>
       </tbody>
@@ -11079,7 +11163,7 @@ Options are <code>INDEX</code>, <code>CLASS</code>, <code>TRACK</code>.</p>
 <h4 id="supervision.annotators.core.CircleAnnotator.annotate(scene)" class="doc doc-heading doc-heading-parameter">                  <code>scene</code>
 <a href="#supervision.annotators.core.CircleAnnotator.annotate(scene)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -11097,7 +11181,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.CircleAnnotator.annotate(detections)" class="doc doc-heading doc-heading-parameter">                  <code>detections</code>
 <a href="#supervision.annotators.core.CircleAnnotator.annotate(detections)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Detections</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.detection.core.Detections" href="../core/#supervision.detection.core.Detections">Detections</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -11113,7 +11197,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.CircleAnnotator.annotate(custom_color_lookup)" class="doc doc-heading doc-heading-parameter">                  <code>custom_color_lookup</code>
 <a href="#supervision.annotators.core.CircleAnnotator.annotate(custom_color_lookup)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Optional[ndarray]</code>
+                  <code><span title="typing.Optional">Optional</span>[<span title="numpy.ndarray">ndarray</span>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -11140,7 +11224,7 @@ Allows to override the default color mapping strategy.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -11319,7 +11403,7 @@ supervision-annotator-examples/circle-annotator-example-purple.png" /></p>
 <a id="supervision.annotators.core.DotAnnotator"></a>
     <div class="doc doc-contents first">
             <p class="doc doc-class-bases">
-              Bases: <code>BaseAnnotator</code></p>
+              Bases: <code><span title="supervision.annotators.base.BaseAnnotator">BaseAnnotator</span></code></p>
 
 
         <p>A class for drawing dots on an image at specific coordinates based on provided
@@ -11585,7 +11669,7 @@ detections.</p>
 <h4 id="supervision.annotators.core.DotAnnotator.__init__(color)" class="doc doc-heading doc-heading-parameter">                  <code>color</code>
 <a href="#supervision.annotators.core.DotAnnotator.__init__(color)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Union[Color, ColorPalette]</code>
+                  <code><span title="typing.Union">Union</span>[<a class="autorefs autorefs-internal" title="supervision.draw.color.Color" href="../../utils/draw/#supervision.draw.color.Color">Color</a>, <a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette" href="../../utils/draw/#supervision.draw.color.ColorPalette">ColorPalette</a>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -11594,7 +11678,7 @@ annotating detections.</p>
               </div>
             </td>
             <td>
-                  <code>DEFAULT</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette.DEFAULT" href="../../utils/draw/#supervision.draw.color.ColorPalette.DEFAULT">DEFAULT</a></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -11618,7 +11702,7 @@ annotating detections.</p>
 <h4 id="supervision.annotators.core.DotAnnotator.__init__(position)" class="doc doc-heading doc-heading-parameter">                  <code>position</code>
 <a href="#supervision.annotators.core.DotAnnotator.__init__(position)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Position</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.geometry.core.Position" href="../../utils/geometry/#supervision.geometry.core.Position">Position</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -11626,7 +11710,7 @@ annotating detections.</p>
               </div>
             </td>
             <td>
-                  <code>CENTER</code>
+                  <code><span title="supervision.geometry.core.Position.CENTER">CENTER</span></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -11634,7 +11718,7 @@ annotating detections.</p>
 <h4 id="supervision.annotators.core.DotAnnotator.__init__(color_lookup)" class="doc doc-heading doc-heading-parameter">                  <code>color_lookup</code>
 <a href="#supervision.annotators.core.DotAnnotator.__init__(color_lookup)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ColorLookup</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.annotators.utils.ColorLookup" href="#supervision.annotators.utils.ColorLookup">ColorLookup</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -11643,7 +11727,7 @@ Options are <code>INDEX</code>, <code>CLASS</code>, <code>TRACK</code>.</p>
               </div>
             </td>
             <td>
-                  <code>CLASS</code>
+                  <code><span title="supervision.annotators.utils.ColorLookup.CLASS">CLASS</span></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -11667,7 +11751,7 @@ Options are <code>INDEX</code>, <code>CLASS</code>, <code>TRACK</code>.</p>
 <h4 id="supervision.annotators.core.DotAnnotator.__init__(outline_color)" class="doc doc-heading doc-heading-parameter">                  <code>outline_color</code>
 <a href="#supervision.annotators.core.DotAnnotator.__init__(outline_color)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Union[Color, ColorPalette]</code>
+                  <code><span title="typing.Union">Union</span>[<a class="autorefs autorefs-internal" title="supervision.draw.color.Color" href="../../utils/draw/#supervision.draw.color.Color">Color</a>, <a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette" href="../../utils/draw/#supervision.draw.color.ColorPalette">ColorPalette</a>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -11677,7 +11761,7 @@ greater than 0.</p>
               </div>
             </td>
             <td>
-                  <code>BLACK</code>
+                  <code><span title="supervision.draw.color.Color.BLACK">BLACK</span></code>
             </td>
           </tr>
       </tbody>
@@ -11776,7 +11860,7 @@ greater than 0.</p>
 <h4 id="supervision.annotators.core.DotAnnotator.annotate(scene)" class="doc doc-heading doc-heading-parameter">                  <code>scene</code>
 <a href="#supervision.annotators.core.DotAnnotator.annotate(scene)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -11794,7 +11878,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.DotAnnotator.annotate(detections)" class="doc doc-heading doc-heading-parameter">                  <code>detections</code>
 <a href="#supervision.annotators.core.DotAnnotator.annotate(detections)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Detections</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.detection.core.Detections" href="../core/#supervision.detection.core.Detections">Detections</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -11810,7 +11894,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.DotAnnotator.annotate(custom_color_lookup)" class="doc doc-heading doc-heading-parameter">                  <code>custom_color_lookup</code>
 <a href="#supervision.annotators.core.DotAnnotator.annotate(custom_color_lookup)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Optional[ndarray]</code>
+                  <code><span title="typing.Optional">Optional</span>[<span title="numpy.ndarray">ndarray</span>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -11837,7 +11921,7 @@ Allows to override the default color mapping strategy.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -12032,7 +12116,7 @@ supervision-annotator-examples/dot-annotator-example-purple.png" /></p>
 <a id="supervision.annotators.core.TriangleAnnotator"></a>
     <div class="doc doc-contents first">
             <p class="doc doc-class-bases">
-              Bases: <code>BaseAnnotator</code></p>
+              Bases: <code><span title="supervision.annotators.base.BaseAnnotator">BaseAnnotator</span></code></p>
 
 
         <p>A class for drawing triangle markers on an image at specific coordinates based on
@@ -12320,7 +12404,7 @@ provided detections.</p>
 <h4 id="supervision.annotators.core.TriangleAnnotator.__init__(color)" class="doc doc-heading doc-heading-parameter">                  <code>color</code>
 <a href="#supervision.annotators.core.TriangleAnnotator.__init__(color)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Union[Color, ColorPalette]</code>
+                  <code><span title="typing.Union">Union</span>[<a class="autorefs autorefs-internal" title="supervision.draw.color.Color" href="../../utils/draw/#supervision.draw.color.Color">Color</a>, <a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette" href="../../utils/draw/#supervision.draw.color.ColorPalette">ColorPalette</a>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -12329,7 +12413,7 @@ annotating detections.</p>
               </div>
             </td>
             <td>
-                  <code>DEFAULT</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette.DEFAULT" href="../../utils/draw/#supervision.draw.color.ColorPalette.DEFAULT">DEFAULT</a></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -12369,7 +12453,7 @@ annotating detections.</p>
 <h4 id="supervision.annotators.core.TriangleAnnotator.__init__(position)" class="doc doc-heading doc-heading-parameter">                  <code>position</code>
 <a href="#supervision.annotators.core.TriangleAnnotator.__init__(position)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Position</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.geometry.core.Position" href="../../utils/geometry/#supervision.geometry.core.Position">Position</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -12377,7 +12461,7 @@ annotating detections.</p>
               </div>
             </td>
             <td>
-                  <code>TOP_CENTER</code>
+                  <code><span title="supervision.geometry.core.Position.TOP_CENTER">TOP_CENTER</span></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -12385,7 +12469,7 @@ annotating detections.</p>
 <h4 id="supervision.annotators.core.TriangleAnnotator.__init__(color_lookup)" class="doc doc-heading doc-heading-parameter">                  <code>color_lookup</code>
 <a href="#supervision.annotators.core.TriangleAnnotator.__init__(color_lookup)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ColorLookup</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.annotators.utils.ColorLookup" href="#supervision.annotators.utils.ColorLookup">ColorLookup</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -12394,7 +12478,7 @@ Options are <code>INDEX</code>, <code>CLASS</code>, <code>TRACK</code>.</p>
               </div>
             </td>
             <td>
-                  <code>CLASS</code>
+                  <code><span title="supervision.annotators.utils.ColorLookup.CLASS">CLASS</span></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -12418,7 +12502,7 @@ Options are <code>INDEX</code>, <code>CLASS</code>, <code>TRACK</code>.</p>
 <h4 id="supervision.annotators.core.TriangleAnnotator.__init__(outline_color)" class="doc doc-heading doc-heading-parameter">                  <code>outline_color</code>
 <a href="#supervision.annotators.core.TriangleAnnotator.__init__(outline_color)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Union[Color, ColorPalette]</code>
+                  <code><span title="typing.Union">Union</span>[<a class="autorefs autorefs-internal" title="supervision.draw.color.Color" href="../../utils/draw/#supervision.draw.color.Color">Color</a>, <a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette" href="../../utils/draw/#supervision.draw.color.ColorPalette">ColorPalette</a>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -12428,7 +12512,7 @@ greater than 0.</p>
               </div>
             </td>
             <td>
-                  <code>BLACK</code>
+                  <code><span title="supervision.draw.color.Color.BLACK">BLACK</span></code>
             </td>
           </tr>
       </tbody>
@@ -12533,7 +12617,7 @@ greater than 0.</p>
 <h4 id="supervision.annotators.core.TriangleAnnotator.annotate(scene)" class="doc doc-heading doc-heading-parameter">                  <code>scene</code>
 <a href="#supervision.annotators.core.TriangleAnnotator.annotate(scene)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -12551,7 +12635,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.TriangleAnnotator.annotate(detections)" class="doc doc-heading doc-heading-parameter">                  <code>detections</code>
 <a href="#supervision.annotators.core.TriangleAnnotator.annotate(detections)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Detections</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.detection.core.Detections" href="../core/#supervision.detection.core.Detections">Detections</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -12567,7 +12651,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.TriangleAnnotator.annotate(custom_color_lookup)" class="doc doc-heading doc-heading-parameter">                  <code>custom_color_lookup</code>
 <a href="#supervision.annotators.core.TriangleAnnotator.annotate(custom_color_lookup)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Optional[ndarray]</code>
+                  <code><span title="typing.Optional">Optional</span>[<span title="numpy.ndarray">ndarray</span>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -12594,7 +12678,7 @@ Allows to override the default color mapping strategy.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -12805,7 +12889,7 @@ supervision-annotator-examples/triangle-annotator-example.png" /></p>
 <a id="supervision.annotators.core.EllipseAnnotator"></a>
     <div class="doc doc-contents first">
             <p class="doc doc-class-bases">
-              Bases: <code>BaseAnnotator</code></p>
+              Bases: <code><span title="supervision.annotators.base.BaseAnnotator">BaseAnnotator</span></code></p>
 
 
         <p>A class for drawing ellipses on an image using provided detections.</p>
@@ -13046,7 +13130,7 @@ supervision-annotator-examples/triangle-annotator-example.png" /></p>
 <h4 id="supervision.annotators.core.EllipseAnnotator.__init__(color)" class="doc doc-heading doc-heading-parameter">                  <code>color</code>
 <a href="#supervision.annotators.core.EllipseAnnotator.__init__(color)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Union[Color, ColorPalette]</code>
+                  <code><span title="typing.Union">Union</span>[<a class="autorefs autorefs-internal" title="supervision.draw.color.Color" href="../../utils/draw/#supervision.draw.color.Color">Color</a>, <a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette" href="../../utils/draw/#supervision.draw.color.ColorPalette">ColorPalette</a>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -13055,7 +13139,7 @@ annotating detections.</p>
               </div>
             </td>
             <td>
-                  <code>DEFAULT</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette.DEFAULT" href="../../utils/draw/#supervision.draw.color.ColorPalette.DEFAULT">DEFAULT</a></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -13111,7 +13195,7 @@ annotating detections.</p>
 <h4 id="supervision.annotators.core.EllipseAnnotator.__init__(color_lookup)" class="doc doc-heading doc-heading-parameter">                  <code>color_lookup</code>
 <a href="#supervision.annotators.core.EllipseAnnotator.__init__(color_lookup)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ColorLookup</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.annotators.utils.ColorLookup" href="#supervision.annotators.utils.ColorLookup">ColorLookup</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -13120,7 +13204,7 @@ Options are <code>INDEX</code>, <code>CLASS</code>, <code>TRACK</code>.</p>
               </div>
             </td>
             <td>
-                  <code>CLASS</code>
+                  <code><span title="supervision.annotators.utils.ColorLookup.CLASS">CLASS</span></code>
             </td>
           </tr>
       </tbody>
@@ -13209,7 +13293,7 @@ Options are <code>INDEX</code>, <code>CLASS</code>, <code>TRACK</code>.</p>
 <h4 id="supervision.annotators.core.EllipseAnnotator.annotate(scene)" class="doc doc-heading doc-heading-parameter">                  <code>scene</code>
 <a href="#supervision.annotators.core.EllipseAnnotator.annotate(scene)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -13227,7 +13311,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.EllipseAnnotator.annotate(detections)" class="doc doc-heading doc-heading-parameter">                  <code>detections</code>
 <a href="#supervision.annotators.core.EllipseAnnotator.annotate(detections)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Detections</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.detection.core.Detections" href="../core/#supervision.detection.core.Detections">Detections</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -13243,7 +13327,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.EllipseAnnotator.annotate(custom_color_lookup)" class="doc doc-heading doc-heading-parameter">                  <code>custom_color_lookup</code>
 <a href="#supervision.annotators.core.EllipseAnnotator.annotate(custom_color_lookup)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Optional[ndarray]</code>
+                  <code><span title="typing.Optional">Optional</span>[<span title="numpy.ndarray">ndarray</span>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -13270,7 +13354,7 @@ Allows to override the default color mapping strategy.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -13453,7 +13537,7 @@ supervision-annotator-examples/ellipse-annotator-example-purple.png" /></p>
 <a id="supervision.annotators.core.HaloAnnotator"></a>
     <div class="doc doc-contents first">
             <p class="doc doc-class-bases">
-              Bases: <code>BaseAnnotator</code></p>
+              Bases: <code><span title="supervision.annotators.base.BaseAnnotator">BaseAnnotator</span></code></p>
 
 
         <p>A class for drawing Halos on an image using provided detections.</p>
@@ -13712,7 +13796,7 @@ supervision-annotator-examples/ellipse-annotator-example-purple.png" /></p>
 <h4 id="supervision.annotators.core.HaloAnnotator.__init__(color)" class="doc doc-heading doc-heading-parameter">                  <code>color</code>
 <a href="#supervision.annotators.core.HaloAnnotator.__init__(color)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Union[Color, ColorPalette]</code>
+                  <code><span title="typing.Union">Union</span>[<a class="autorefs autorefs-internal" title="supervision.draw.color.Color" href="../../utils/draw/#supervision.draw.color.Color">Color</a>, <a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette" href="../../utils/draw/#supervision.draw.color.ColorPalette">ColorPalette</a>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -13721,7 +13805,7 @@ annotating detections.</p>
               </div>
             </td>
             <td>
-                  <code>DEFAULT</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette.DEFAULT" href="../../utils/draw/#supervision.draw.color.ColorPalette.DEFAULT">DEFAULT</a></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -13762,7 +13846,7 @@ the halo.</p>
 <h4 id="supervision.annotators.core.HaloAnnotator.__init__(color_lookup)" class="doc doc-heading doc-heading-parameter">                  <code>color_lookup</code>
 <a href="#supervision.annotators.core.HaloAnnotator.__init__(color_lookup)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ColorLookup</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.annotators.utils.ColorLookup" href="#supervision.annotators.utils.ColorLookup">ColorLookup</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -13771,7 +13855,7 @@ Options are <code>INDEX</code>, <code>CLASS</code>, <code>TRACK</code>.</p>
               </div>
             </td>
             <td>
-                  <code>CLASS</code>
+                  <code><span title="supervision.annotators.utils.ColorLookup.CLASS">CLASS</span></code>
             </td>
           </tr>
       </tbody>
@@ -13856,7 +13940,7 @@ Options are <code>INDEX</code>, <code>CLASS</code>, <code>TRACK</code>.</p>
 <h4 id="supervision.annotators.core.HaloAnnotator.annotate(scene)" class="doc doc-heading doc-heading-parameter">                  <code>scene</code>
 <a href="#supervision.annotators.core.HaloAnnotator.annotate(scene)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -13874,7 +13958,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.HaloAnnotator.annotate(detections)" class="doc doc-heading doc-heading-parameter">                  <code>detections</code>
 <a href="#supervision.annotators.core.HaloAnnotator.annotate(detections)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Detections</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.detection.core.Detections" href="../core/#supervision.detection.core.Detections">Detections</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -13890,7 +13974,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.HaloAnnotator.annotate(custom_color_lookup)" class="doc doc-heading doc-heading-parameter">                  <code>custom_color_lookup</code>
 <a href="#supervision.annotators.core.HaloAnnotator.annotate(custom_color_lookup)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Optional[ndarray]</code>
+                  <code><span title="typing.Optional">Optional</span>[<span title="numpy.ndarray">ndarray</span>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -13917,7 +14001,7 @@ Allows to override the default color mapping strategy.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -14110,7 +14194,7 @@ supervision-annotator-examples/halo-annotator-example-purple.png" /></p>
 <a id="supervision.annotators.core.PercentageBarAnnotator"></a>
     <div class="doc doc-contents first">
             <p class="doc doc-class-bases">
-              Bases: <code>BaseAnnotator</code></p>
+              Bases: <code><span title="supervision.annotators.base.BaseAnnotator">BaseAnnotator</span></code></p>
 
 
         <p>A class for drawing percentage bars on an image using provided detections.</p>
@@ -14565,7 +14649,7 @@ supervision-annotator-examples/halo-annotator-example-purple.png" /></p>
 <h4 id="supervision.annotators.core.PercentageBarAnnotator.__init__(color)" class="doc doc-heading doc-heading-parameter">                  <code>color</code>
 <a href="#supervision.annotators.core.PercentageBarAnnotator.__init__(color)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Union[Color, ColorPalette]</code>
+                  <code><span title="typing.Union">Union</span>[<a class="autorefs autorefs-internal" title="supervision.draw.color.Color" href="../../utils/draw/#supervision.draw.color.Color">Color</a>, <a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette" href="../../utils/draw/#supervision.draw.color.ColorPalette">ColorPalette</a>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -14574,7 +14658,7 @@ annotating detections.</p>
               </div>
             </td>
             <td>
-                  <code>DEFAULT</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette.DEFAULT" href="../../utils/draw/#supervision.draw.color.ColorPalette.DEFAULT">DEFAULT</a></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -14582,7 +14666,7 @@ annotating detections.</p>
 <h4 id="supervision.annotators.core.PercentageBarAnnotator.__init__(border_color)" class="doc doc-heading doc-heading-parameter">                  <code>border_color</code>
 <a href="#supervision.annotators.core.PercentageBarAnnotator.__init__(border_color)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Color</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.draw.color.Color" href="../../utils/draw/#supervision.draw.color.Color">Color</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -14590,7 +14674,7 @@ annotating detections.</p>
               </div>
             </td>
             <td>
-                  <code>BLACK</code>
+                  <code><span title="supervision.draw.color.Color.BLACK">BLACK</span></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -14598,7 +14682,7 @@ annotating detections.</p>
 <h4 id="supervision.annotators.core.PercentageBarAnnotator.__init__(position)" class="doc doc-heading doc-heading-parameter">                  <code>position</code>
 <a href="#supervision.annotators.core.PercentageBarAnnotator.__init__(position)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Position</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.geometry.core.Position" href="../../utils/geometry/#supervision.geometry.core.Position">Position</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -14606,7 +14690,7 @@ annotating detections.</p>
               </div>
             </td>
             <td>
-                  <code>TOP_CENTER</code>
+                  <code><span title="supervision.geometry.core.Position.TOP_CENTER">TOP_CENTER</span></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -14614,7 +14698,7 @@ annotating detections.</p>
 <h4 id="supervision.annotators.core.PercentageBarAnnotator.__init__(color_lookup)" class="doc doc-heading doc-heading-parameter">                  <code>color_lookup</code>
 <a href="#supervision.annotators.core.PercentageBarAnnotator.__init__(color_lookup)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ColorLookup</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.annotators.utils.ColorLookup" href="#supervision.annotators.utils.ColorLookup">ColorLookup</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -14623,7 +14707,7 @@ Options are <code>INDEX</code>, <code>CLASS</code>, <code>TRACK</code>.</p>
               </div>
             </td>
             <td>
-                  <code>CLASS</code>
+                  <code><span title="supervision.annotators.utils.ColorLookup.CLASS">CLASS</span></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -14631,7 +14715,7 @@ Options are <code>INDEX</code>, <code>CLASS</code>, <code>TRACK</code>.</p>
 <h4 id="supervision.annotators.core.PercentageBarAnnotator.__init__(border_thickness)" class="doc doc-heading doc-heading-parameter">                  <code>border_thickness</code>
 <a href="#supervision.annotators.core.PercentageBarAnnotator.__init__(border_thickness)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Optional[int]</code>
+                  <code><span title="typing.Optional">Optional</span>[int]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -14746,7 +14830,7 @@ values associated with each detection.</p>
 <h4 id="supervision.annotators.core.PercentageBarAnnotator.annotate(scene)" class="doc doc-heading doc-heading-parameter">                  <code>scene</code>
 <a href="#supervision.annotators.core.PercentageBarAnnotator.annotate(scene)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -14764,7 +14848,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.PercentageBarAnnotator.annotate(detections)" class="doc doc-heading doc-heading-parameter">                  <code>detections</code>
 <a href="#supervision.annotators.core.PercentageBarAnnotator.annotate(detections)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Detections</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.detection.core.Detections" href="../core/#supervision.detection.core.Detections">Detections</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -14780,7 +14864,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.PercentageBarAnnotator.annotate(custom_color_lookup)" class="doc doc-heading doc-heading-parameter">                  <code>custom_color_lookup</code>
 <a href="#supervision.annotators.core.PercentageBarAnnotator.annotate(custom_color_lookup)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Optional[ndarray]</code>
+                  <code><span title="typing.Optional">Optional</span>[<span title="numpy.ndarray">ndarray</span>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -14797,7 +14881,7 @@ Allows to override the default color mapping strategy.</p>
 <h4 id="supervision.annotators.core.PercentageBarAnnotator.annotate(custom_values)" class="doc doc-heading doc-heading-parameter">                  <code>custom_values</code>
 <a href="#supervision.annotators.core.PercentageBarAnnotator.annotate(custom_values)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Optional[ndarray]</code>
+                  <code><span title="typing.Optional">Optional</span>[<span title="numpy.ndarray">ndarray</span>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -14827,7 +14911,7 @@ to be displayed.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -15066,7 +15150,7 @@ supervision-annotator-examples/percentage-bar-annotator-example-purple.png" /></
 <a id="supervision.annotators.core.HeatMapAnnotator"></a>
     <div class="doc doc-contents first">
             <p class="doc doc-class-bases">
-              Bases: <code>BaseAnnotator</code></p>
+              Bases: <code><span title="supervision.annotators.base.BaseAnnotator">BaseAnnotator</span></code></p>
 
 
         <p>A class for drawing heatmaps on an image based on provided detections.
@@ -15331,7 +15415,7 @@ of blurred circles.</p>
 <h4 id="supervision.annotators.core.HeatMapAnnotator.__init__(position)" class="doc doc-heading doc-heading-parameter">                  <code>position</code>
 <a href="#supervision.annotators.core.HeatMapAnnotator.__init__(position)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Position</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.geometry.core.Position" href="../../utils/geometry/#supervision.geometry.core.Position">Position</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -15340,7 +15424,7 @@ of blurred circles.</p>
               </div>
             </td>
             <td>
-                  <code>BOTTOM_CENTER</code>
+                  <code><span title="supervision.geometry.core.Position.BOTTOM_CENTER">BOTTOM_CENTER</span></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -15515,7 +15599,7 @@ of blurred circles.</p>
 <h4 id="supervision.annotators.core.HeatMapAnnotator.annotate(scene)" class="doc doc-heading doc-heading-parameter">                  <code>scene</code>
 <a href="#supervision.annotators.core.HeatMapAnnotator.annotate(scene)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -15533,7 +15617,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.HeatMapAnnotator.annotate(detections)" class="doc doc-heading doc-heading-parameter">                  <code>detections</code>
 <a href="#supervision.annotators.core.HeatMapAnnotator.annotate(detections)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Detections</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.detection.core.Detections" href="../core/#supervision.detection.core.Detections">Detections</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -15559,7 +15643,7 @@ or <code>PIL.Image.Image</code>.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -15762,7 +15846,7 @@ supervision-annotator-examples/heat-map-annotator-example-purple.png" /></p>
 <a id="supervision.annotators.core.MaskAnnotator"></a>
     <div class="doc doc-contents first">
             <p class="doc doc-class-bases">
-              Bases: <code>BaseAnnotator</code></p>
+              Bases: <code><span title="supervision.annotators.base.BaseAnnotator">BaseAnnotator</span></code></p>
 
 
         <p>A class for drawing masks on an image using provided detections.</p>
@@ -15997,7 +16081,7 @@ supervision-annotator-examples/heat-map-annotator-example-purple.png" /></p>
 <h4 id="supervision.annotators.core.MaskAnnotator.__init__(color)" class="doc doc-heading doc-heading-parameter">                  <code>color</code>
 <a href="#supervision.annotators.core.MaskAnnotator.__init__(color)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Union[Color, ColorPalette]</code>
+                  <code><span title="typing.Union">Union</span>[<a class="autorefs autorefs-internal" title="supervision.draw.color.Color" href="../../utils/draw/#supervision.draw.color.Color">Color</a>, <a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette" href="../../utils/draw/#supervision.draw.color.ColorPalette">ColorPalette</a>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -16006,7 +16090,7 @@ annotating detections.</p>
               </div>
             </td>
             <td>
-                  <code>DEFAULT</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette.DEFAULT" href="../../utils/draw/#supervision.draw.color.ColorPalette.DEFAULT">DEFAULT</a></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -16030,7 +16114,7 @@ annotating detections.</p>
 <h4 id="supervision.annotators.core.MaskAnnotator.__init__(color_lookup)" class="doc doc-heading doc-heading-parameter">                  <code>color_lookup</code>
 <a href="#supervision.annotators.core.MaskAnnotator.__init__(color_lookup)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ColorLookup</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.annotators.utils.ColorLookup" href="#supervision.annotators.utils.ColorLookup">ColorLookup</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -16039,7 +16123,7 @@ Options are <code>INDEX</code>, <code>CLASS</code>, <code>TRACK</code>.</p>
               </div>
             </td>
             <td>
-                  <code>CLASS</code>
+                  <code><span title="supervision.annotators.utils.ColorLookup.CLASS">CLASS</span></code>
             </td>
           </tr>
       </tbody>
@@ -16116,7 +16200,7 @@ Options are <code>INDEX</code>, <code>CLASS</code>, <code>TRACK</code>.</p>
 <h4 id="supervision.annotators.core.MaskAnnotator.annotate(scene)" class="doc doc-heading doc-heading-parameter">                  <code>scene</code>
 <a href="#supervision.annotators.core.MaskAnnotator.annotate(scene)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -16134,7 +16218,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.MaskAnnotator.annotate(detections)" class="doc doc-heading doc-heading-parameter">                  <code>detections</code>
 <a href="#supervision.annotators.core.MaskAnnotator.annotate(detections)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Detections</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.detection.core.Detections" href="../core/#supervision.detection.core.Detections">Detections</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -16150,7 +16234,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.MaskAnnotator.annotate(custom_color_lookup)" class="doc doc-heading doc-heading-parameter">                  <code>custom_color_lookup</code>
 <a href="#supervision.annotators.core.MaskAnnotator.annotate(custom_color_lookup)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Optional[ndarray]</code>
+                  <code><span title="typing.Optional">Optional</span>[<span title="numpy.ndarray">ndarray</span>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -16177,7 +16261,7 @@ Allows to override the default color mapping strategy.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -16354,7 +16438,7 @@ supervision-annotator-examples/mask-annotator-example-purple.png" /></p>
 <a id="supervision.annotators.core.PolygonAnnotator"></a>
     <div class="doc doc-contents first">
             <p class="doc doc-class-bases">
-              Bases: <code>BaseAnnotator</code></p>
+              Bases: <code><span title="supervision.annotators.base.BaseAnnotator">BaseAnnotator</span></code></p>
 
 
         <p>A class for drawing polygons on an image using provided detections.</p>
@@ -16591,7 +16675,7 @@ supervision-annotator-examples/mask-annotator-example-purple.png" /></p>
 <h4 id="supervision.annotators.core.PolygonAnnotator.__init__(color)" class="doc doc-heading doc-heading-parameter">                  <code>color</code>
 <a href="#supervision.annotators.core.PolygonAnnotator.__init__(color)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Union[Color, ColorPalette]</code>
+                  <code><span title="typing.Union">Union</span>[<a class="autorefs autorefs-internal" title="supervision.draw.color.Color" href="../../utils/draw/#supervision.draw.color.Color">Color</a>, <a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette" href="../../utils/draw/#supervision.draw.color.ColorPalette">ColorPalette</a>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -16600,7 +16684,7 @@ annotating detections.</p>
               </div>
             </td>
             <td>
-                  <code>DEFAULT</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette.DEFAULT" href="../../utils/draw/#supervision.draw.color.ColorPalette.DEFAULT">DEFAULT</a></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -16624,7 +16708,7 @@ annotating detections.</p>
 <h4 id="supervision.annotators.core.PolygonAnnotator.__init__(color_lookup)" class="doc doc-heading doc-heading-parameter">                  <code>color_lookup</code>
 <a href="#supervision.annotators.core.PolygonAnnotator.__init__(color_lookup)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ColorLookup</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.annotators.utils.ColorLookup" href="#supervision.annotators.utils.ColorLookup">ColorLookup</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -16633,7 +16717,7 @@ Options are <code>INDEX</code>, <code>CLASS</code>, <code>TRACK</code>.</p>
               </div>
             </td>
             <td>
-                  <code>CLASS</code>
+                  <code><span title="supervision.annotators.utils.ColorLookup.CLASS">CLASS</span></code>
             </td>
           </tr>
       </tbody>
@@ -16710,7 +16794,7 @@ Options are <code>INDEX</code>, <code>CLASS</code>, <code>TRACK</code>.</p>
 <h4 id="supervision.annotators.core.PolygonAnnotator.annotate(scene)" class="doc doc-heading doc-heading-parameter">                  <code>scene</code>
 <a href="#supervision.annotators.core.PolygonAnnotator.annotate(scene)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -16728,7 +16812,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.PolygonAnnotator.annotate(detections)" class="doc doc-heading doc-heading-parameter">                  <code>detections</code>
 <a href="#supervision.annotators.core.PolygonAnnotator.annotate(detections)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Detections</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.detection.core.Detections" href="../core/#supervision.detection.core.Detections">Detections</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -16744,7 +16828,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.PolygonAnnotator.annotate(custom_color_lookup)" class="doc doc-heading doc-heading-parameter">                  <code>custom_color_lookup</code>
 <a href="#supervision.annotators.core.PolygonAnnotator.annotate(custom_color_lookup)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Optional[ndarray]</code>
+                  <code><span title="typing.Optional">Optional</span>[<span title="numpy.ndarray">ndarray</span>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -16771,7 +16855,7 @@ Allows to override the default color mapping strategy.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -16950,7 +17034,7 @@ supervision-annotator-examples/polygon-annotator-example-purple.png" /></p>
 <a id="supervision.annotators.core.LabelAnnotator"></a>
     <div class="doc doc-contents first">
             <p class="doc doc-class-bases">
-              Bases: <code>BaseAnnotator</code></p>
+              Bases: <code><span title="supervision.annotators.base.BaseAnnotator">BaseAnnotator</span></code></p>
 
 
         <p>A class for annotating labels on an image using provided detections.</p>
@@ -17423,7 +17507,7 @@ supervision-annotator-examples/polygon-annotator-example-purple.png" /></p>
 <h4 id="supervision.annotators.core.LabelAnnotator.__init__(color)" class="doc doc-heading doc-heading-parameter">                  <code>color</code>
 <a href="#supervision.annotators.core.LabelAnnotator.__init__(color)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Union[Color, ColorPalette]</code>
+                  <code><span title="typing.Union">Union</span>[<a class="autorefs autorefs-internal" title="supervision.draw.color.Color" href="../../utils/draw/#supervision.draw.color.Color">Color</a>, <a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette" href="../../utils/draw/#supervision.draw.color.ColorPalette">ColorPalette</a>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -17432,7 +17516,7 @@ annotating the text background.</p>
               </div>
             </td>
             <td>
-                  <code>DEFAULT</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette.DEFAULT" href="../../utils/draw/#supervision.draw.color.ColorPalette.DEFAULT">DEFAULT</a></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -17440,7 +17524,7 @@ annotating the text background.</p>
 <h4 id="supervision.annotators.core.LabelAnnotator.__init__(text_color)" class="doc doc-heading doc-heading-parameter">                  <code>text_color</code>
 <a href="#supervision.annotators.core.LabelAnnotator.__init__(text_color)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Union[Color, ColorPalette]</code>
+                  <code><span title="typing.Union">Union</span>[<a class="autorefs autorefs-internal" title="supervision.draw.color.Color" href="../../utils/draw/#supervision.draw.color.Color">Color</a>, <a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette" href="../../utils/draw/#supervision.draw.color.ColorPalette">ColorPalette</a>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -17449,7 +17533,7 @@ for the text.</p>
               </div>
             </td>
             <td>
-                  <code>WHITE</code>
+                  <code><span title="supervision.draw.color.Color.WHITE">WHITE</span></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -17505,7 +17589,7 @@ for the text.</p>
 <h4 id="supervision.annotators.core.LabelAnnotator.__init__(text_position)" class="doc doc-heading doc-heading-parameter">                  <code>text_position</code>
 <a href="#supervision.annotators.core.LabelAnnotator.__init__(text_position)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Position</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.geometry.core.Position" href="../../utils/geometry/#supervision.geometry.core.Position">Position</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -17514,7 +17598,7 @@ Possible values are defined in the <code>Position</code> enum.</p>
               </div>
             </td>
             <td>
-                  <code>TOP_LEFT</code>
+                  <code><span title="supervision.geometry.core.Position.TOP_LEFT">TOP_LEFT</span></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -17522,7 +17606,7 @@ Possible values are defined in the <code>Position</code> enum.</p>
 <h4 id="supervision.annotators.core.LabelAnnotator.__init__(color_lookup)" class="doc doc-heading doc-heading-parameter">                  <code>color_lookup</code>
 <a href="#supervision.annotators.core.LabelAnnotator.__init__(color_lookup)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ColorLookup</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.annotators.utils.ColorLookup" href="#supervision.annotators.utils.ColorLookup">ColorLookup</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -17531,7 +17615,7 @@ Options are <code>INDEX</code>, <code>CLASS</code>, <code>TRACK</code>.</p>
               </div>
             </td>
             <td>
-                  <code>CLASS</code>
+                  <code><span title="supervision.annotators.utils.ColorLookup.CLASS">CLASS</span></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -17661,7 +17745,7 @@ value is higher than the lower dimension, width or height, is clipped.</p>
 <h4 id="supervision.annotators.core.LabelAnnotator.annotate(scene)" class="doc doc-heading doc-heading-parameter">                  <code>scene</code>
 <a href="#supervision.annotators.core.LabelAnnotator.annotate(scene)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -17679,7 +17763,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.LabelAnnotator.annotate(detections)" class="doc doc-heading doc-heading-parameter">                  <code>detections</code>
 <a href="#supervision.annotators.core.LabelAnnotator.annotate(detections)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Detections</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.detection.core.Detections" href="../core/#supervision.detection.core.Detections">Detections</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -17695,7 +17779,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.LabelAnnotator.annotate(labels)" class="doc doc-heading doc-heading-parameter">                  <code>labels</code>
 <a href="#supervision.annotators.core.LabelAnnotator.annotate(labels)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Optional[List[str]]</code>
+                  <code><span title="typing.Optional">Optional</span>[<span title="typing.List">List</span>[str]]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -17711,7 +17795,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.LabelAnnotator.annotate(custom_color_lookup)" class="doc doc-heading doc-heading-parameter">                  <code>custom_color_lookup</code>
 <a href="#supervision.annotators.core.LabelAnnotator.annotate(custom_color_lookup)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Optional[ndarray]</code>
+                  <code><span title="typing.Optional">Optional</span>[<span title="numpy.ndarray">ndarray</span>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -17738,7 +17822,7 @@ Allows to override the default color mapping strategy.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -18052,7 +18136,7 @@ supervision-annotator-examples/label-annotator-example-purple.png" /></p>
 <a id="supervision.annotators.core.RichLabelAnnotator"></a>
     <div class="doc doc-contents first">
             <p class="doc doc-class-bases">
-              Bases: <code>BaseAnnotator</code></p>
+              Bases: <code><span title="supervision.annotators.base.BaseAnnotator">BaseAnnotator</span></code></p>
 
 
         <p>A class for annotating labels on an image using provided detections,
@@ -18464,7 +18548,7 @@ with support for Unicode characters by using a custom font.</p>
 <h4 id="supervision.annotators.core.RichLabelAnnotator.__init__(color)" class="doc doc-heading doc-heading-parameter">                  <code>color</code>
 <a href="#supervision.annotators.core.RichLabelAnnotator.__init__(color)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Union[Color, ColorPalette]</code>
+                  <code><span title="typing.Union">Union</span>[<a class="autorefs autorefs-internal" title="supervision.draw.color.Color" href="../../utils/draw/#supervision.draw.color.Color">Color</a>, <a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette" href="../../utils/draw/#supervision.draw.color.ColorPalette">ColorPalette</a>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -18473,7 +18557,7 @@ annotating the text background.</p>
               </div>
             </td>
             <td>
-                  <code>DEFAULT</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette.DEFAULT" href="../../utils/draw/#supervision.draw.color.ColorPalette.DEFAULT">DEFAULT</a></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -18481,7 +18565,7 @@ annotating the text background.</p>
 <h4 id="supervision.annotators.core.RichLabelAnnotator.__init__(text_color)" class="doc doc-heading doc-heading-parameter">                  <code>text_color</code>
 <a href="#supervision.annotators.core.RichLabelAnnotator.__init__(text_color)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Union[Color, ColorPalette]</code>
+                  <code><span title="typing.Union">Union</span>[<a class="autorefs autorefs-internal" title="supervision.draw.color.Color" href="../../utils/draw/#supervision.draw.color.Color">Color</a>, <a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette" href="../../utils/draw/#supervision.draw.color.ColorPalette">ColorPalette</a>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -18489,7 +18573,7 @@ annotating the text background.</p>
               </div>
             </td>
             <td>
-                  <code>WHITE</code>
+                  <code><span title="supervision.draw.color.Color.WHITE">WHITE</span></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -18497,7 +18581,7 @@ annotating the text background.</p>
 <h4 id="supervision.annotators.core.RichLabelAnnotator.__init__(font_path)" class="doc doc-heading doc-heading-parameter">                  <code>font_path</code>
 <a href="#supervision.annotators.core.RichLabelAnnotator.__init__(font_path)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Optional[str]</code>
+                  <code><span title="typing.Optional">Optional</span>[str]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -18546,7 +18630,7 @@ to use for rendering text. If <code>None</code>, the default PIL font will be us
 <h4 id="supervision.annotators.core.RichLabelAnnotator.__init__(text_position)" class="doc doc-heading doc-heading-parameter">                  <code>text_position</code>
 <a href="#supervision.annotators.core.RichLabelAnnotator.__init__(text_position)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Position</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.geometry.core.Position" href="../../utils/geometry/#supervision.geometry.core.Position">Position</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -18555,7 +18639,7 @@ Possible values are defined in the <code>Position</code> enum.</p>
               </div>
             </td>
             <td>
-                  <code>TOP_LEFT</code>
+                  <code><span title="supervision.geometry.core.Position.TOP_LEFT">TOP_LEFT</span></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -18563,7 +18647,7 @@ Possible values are defined in the <code>Position</code> enum.</p>
 <h4 id="supervision.annotators.core.RichLabelAnnotator.__init__(color_lookup)" class="doc doc-heading doc-heading-parameter">                  <code>color_lookup</code>
 <a href="#supervision.annotators.core.RichLabelAnnotator.__init__(color_lookup)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ColorLookup</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.annotators.utils.ColorLookup" href="#supervision.annotators.utils.ColorLookup">ColorLookup</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -18572,7 +18656,7 @@ Options are <code>INDEX</code>, <code>CLASS</code>, <code>TRACK</code>.</p>
               </div>
             </td>
             <td>
-                  <code>CLASS</code>
+                  <code><span title="supervision.annotators.utils.ColorLookup.CLASS">CLASS</span></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -18715,7 +18799,7 @@ detections, with support for Unicode characters.</p>
 <h4 id="supervision.annotators.core.RichLabelAnnotator.annotate(scene)" class="doc doc-heading doc-heading-parameter">                  <code>scene</code>
 <a href="#supervision.annotators.core.RichLabelAnnotator.annotate(scene)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -18733,7 +18817,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.RichLabelAnnotator.annotate(detections)" class="doc doc-heading doc-heading-parameter">                  <code>detections</code>
 <a href="#supervision.annotators.core.RichLabelAnnotator.annotate(detections)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Detections</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.detection.core.Detections" href="../core/#supervision.detection.core.Detections">Detections</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -18749,7 +18833,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.RichLabelAnnotator.annotate(labels)" class="doc doc-heading doc-heading-parameter">                  <code>labels</code>
 <a href="#supervision.annotators.core.RichLabelAnnotator.annotate(labels)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Optional[List[str]]</code>
+                  <code><span title="typing.Optional">Optional</span>[<span title="typing.List">List</span>[str]]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -18765,7 +18849,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.RichLabelAnnotator.annotate(custom_color_lookup)" class="doc doc-heading doc-heading-parameter">                  <code>custom_color_lookup</code>
 <a href="#supervision.annotators.core.RichLabelAnnotator.annotate(custom_color_lookup)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Optional[ndarray]</code>
+                  <code><span title="typing.Optional">Optional</span>[<span title="numpy.ndarray">ndarray</span>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -18792,7 +18876,7 @@ Allows to override the default color mapping strategy.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -19086,7 +19170,7 @@ or <code>PIL.Image.Image</code>)</p>
 <a id="supervision.annotators.core.IconAnnotator"></a>
     <div class="doc doc-contents first">
             <p class="doc doc-class-bases">
-              Bases: <code>BaseAnnotator</code></p>
+              Bases: <code><span title="supervision.annotators.base.BaseAnnotator">BaseAnnotator</span></code></p>
 
 
         <p>A class for drawing an icon on an image, using provided detections.</p>
@@ -19337,7 +19421,7 @@ or <code>PIL.Image.Image</code>)</p>
 <h4 id="supervision.annotators.core.IconAnnotator.__init__(icon_resolution_wh)" class="doc doc-heading doc-heading-parameter">                  <code>icon_resolution_wh</code>
 <a href="#supervision.annotators.core.IconAnnotator.__init__(icon_resolution_wh)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Tuple[int, int]</code>
+                  <code><span title="typing.Tuple">Tuple</span>[int, int]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -19354,7 +19438,7 @@ All icons will be resized to this resolution, keeping the aspect ratio.</p>
 <h4 id="supervision.annotators.core.IconAnnotator.__init__(icon_position)" class="doc doc-heading doc-heading-parameter">                  <code>icon_position</code>
 <a href="#supervision.annotators.core.IconAnnotator.__init__(icon_position)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Position</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.geometry.core.Position" href="../../utils/geometry/#supervision.geometry.core.Position">Position</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -19362,7 +19446,7 @@ All icons will be resized to this resolution, keeping the aspect ratio.</p>
               </div>
             </td>
             <td>
-                  <code>TOP_CENTER</code>
+                  <code><span title="supervision.geometry.core.Position.TOP_CENTER">TOP_CENTER</span></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -19370,7 +19454,7 @@ All icons will be resized to this resolution, keeping the aspect ratio.</p>
 <h4 id="supervision.annotators.core.IconAnnotator.__init__(offset_xy)" class="doc doc-heading doc-heading-parameter">                  <code>offset_xy</code>
 <a href="#supervision.annotators.core.IconAnnotator.__init__(offset_xy)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Tuple[int, int]</code>
+                  <code><span title="typing.Tuple">Tuple</span>[int, int]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -19456,7 +19540,7 @@ in pixels. Can be both positive and negative.</p>
 <h4 id="supervision.annotators.core.IconAnnotator.annotate(scene)" class="doc doc-heading doc-heading-parameter">                  <code>scene</code>
 <a href="#supervision.annotators.core.IconAnnotator.annotate(scene)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -19474,7 +19558,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.IconAnnotator.annotate(detections)" class="doc doc-heading doc-heading-parameter">                  <code>detections</code>
 <a href="#supervision.annotators.core.IconAnnotator.annotate(detections)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Detections</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.detection.core.Detections" href="../core/#supervision.detection.core.Detections">Detections</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -19490,7 +19574,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.IconAnnotator.annotate(icon_path)" class="doc doc-heading doc-heading-parameter">                  <code>icon_path</code>
 <a href="#supervision.annotators.core.IconAnnotator.annotate(icon_path)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Union[str, List[str]]</code>
+                  <code><span title="typing.Union">Union</span>[str, <span title="typing.List">List</span>[str]]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -19518,7 +19602,7 @@ Pass an empty string <code>""</code> to draw nothing.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -19707,7 +19791,7 @@ supervision-annotator-examples/icon-annotator-example.png" /></p>
 <a id="supervision.annotators.core.BlurAnnotator"></a>
     <div class="doc doc-contents first">
             <p class="doc doc-class-bases">
-              Bases: <code>BaseAnnotator</code></p>
+              Bases: <code><span title="supervision.annotators.base.BaseAnnotator">BaseAnnotator</span></code></p>
 
 
         <p>A class for blurring regions in an image using provided detections.</p>
@@ -19945,7 +20029,7 @@ supervision-annotator-examples/icon-annotator-example.png" /></p>
 <h4 id="supervision.annotators.core.BlurAnnotator.annotate(scene)" class="doc doc-heading doc-heading-parameter">                  <code>scene</code>
 <a href="#supervision.annotators.core.BlurAnnotator.annotate(scene)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -19963,7 +20047,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.BlurAnnotator.annotate(detections)" class="doc doc-heading doc-heading-parameter">                  <code>detections</code>
 <a href="#supervision.annotators.core.BlurAnnotator.annotate(detections)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Detections</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.detection.core.Detections" href="../core/#supervision.detection.core.Detections">Detections</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -19989,7 +20073,7 @@ or <code>PIL.Image.Image</code>.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -20140,7 +20224,7 @@ supervision-annotator-examples/blur-annotator-example-purple.png" /></p>
 <a id="supervision.annotators.core.PixelateAnnotator"></a>
     <div class="doc doc-contents first">
             <p class="doc doc-class-bases">
-              Bases: <code>BaseAnnotator</code></p>
+              Bases: <code><span title="supervision.annotators.base.BaseAnnotator">BaseAnnotator</span></code></p>
 
 
         <p>A class for pixelating regions in an image using provided detections.</p>
@@ -20397,7 +20481,7 @@ supervision-annotator-examples/blur-annotator-example-purple.png" /></p>
 <h4 id="supervision.annotators.core.PixelateAnnotator.annotate(scene)" class="doc doc-heading doc-heading-parameter">                  <code>scene</code>
 <a href="#supervision.annotators.core.PixelateAnnotator.annotate(scene)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -20415,7 +20499,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.PixelateAnnotator.annotate(detections)" class="doc doc-heading doc-heading-parameter">                  <code>detections</code>
 <a href="#supervision.annotators.core.PixelateAnnotator.annotate(detections)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Detections</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.detection.core.Detections" href="../core/#supervision.detection.core.Detections">Detections</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -20441,7 +20525,7 @@ or <code>PIL.Image.Image</code>.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -20610,7 +20694,7 @@ supervision-annotator-examples/pixelate-annotator-example-10.png" /></p>
 <a id="supervision.annotators.core.TraceAnnotator"></a>
     <div class="doc doc-contents first">
             <p class="doc doc-class-bases">
-              Bases: <code>BaseAnnotator</code></p>
+              Bases: <code><span title="supervision.annotators.base.BaseAnnotator">BaseAnnotator</span></code></p>
 
 
         <p>A class for drawing trace paths on an image based on detection coordinates.</p>
@@ -20897,7 +20981,7 @@ tracking into your inference pipeline.</p>
 <h4 id="supervision.annotators.core.TraceAnnotator.__init__(color)" class="doc doc-heading doc-heading-parameter">                  <code>color</code>
 <a href="#supervision.annotators.core.TraceAnnotator.__init__(color)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Union[Color, ColorPalette]</code>
+                  <code><span title="typing.Union">Union</span>[<a class="autorefs autorefs-internal" title="supervision.draw.color.Color" href="../../utils/draw/#supervision.draw.color.Color">Color</a>, <a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette" href="../../utils/draw/#supervision.draw.color.ColorPalette">ColorPalette</a>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -20906,7 +20990,7 @@ a single color or a color palette.</p>
               </div>
             </td>
             <td>
-                  <code>DEFAULT</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette.DEFAULT" href="../../utils/draw/#supervision.draw.color.ColorPalette.DEFAULT">DEFAULT</a></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -20914,7 +20998,7 @@ a single color or a color palette.</p>
 <h4 id="supervision.annotators.core.TraceAnnotator.__init__(position)" class="doc doc-heading doc-heading-parameter">                  <code>position</code>
 <a href="#supervision.annotators.core.TraceAnnotator.__init__(position)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Position</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.geometry.core.Position" href="../../utils/geometry/#supervision.geometry.core.Position">Position</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -20923,7 +21007,7 @@ Defaults to <code>CENTER</code>.</p>
               </div>
             </td>
             <td>
-                  <code>CENTER</code>
+                  <code><span title="supervision.geometry.core.Position.CENTER">CENTER</span></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -20964,7 +21048,7 @@ points. Defaults to <code>30</code>.</p>
 <h4 id="supervision.annotators.core.TraceAnnotator.__init__(color_lookup)" class="doc doc-heading doc-heading-parameter">                  <code>color_lookup</code>
 <a href="#supervision.annotators.core.TraceAnnotator.__init__(color_lookup)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ColorLookup</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.annotators.utils.ColorLookup" href="#supervision.annotators.utils.ColorLookup">ColorLookup</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -20973,7 +21057,7 @@ Options are <code>INDEX</code>, <code>CLASS</code>, <code>TRACK</code>.</p>
               </div>
             </td>
             <td>
-                  <code>CLASS</code>
+                  <code><span title="supervision.annotators.utils.ColorLookup.CLASS">CLASS</span></code>
             </td>
           </tr>
       </tbody>
@@ -21064,7 +21148,7 @@ Options are <code>INDEX</code>, <code>CLASS</code>, <code>TRACK</code>.</p>
 <h4 id="supervision.annotators.core.TraceAnnotator.annotate(scene)" class="doc doc-heading doc-heading-parameter">                  <code>scene</code>
 <a href="#supervision.annotators.core.TraceAnnotator.annotate(scene)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -21082,7 +21166,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.TraceAnnotator.annotate(detections)" class="doc doc-heading doc-heading-parameter">                  <code>detections</code>
 <a href="#supervision.annotators.core.TraceAnnotator.annotate(detections)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Detections</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.detection.core.Detections" href="../core/#supervision.detection.core.Detections">Detections</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -21099,7 +21183,7 @@ which the traces will be drawn.</p>
 <h4 id="supervision.annotators.core.TraceAnnotator.annotate(custom_color_lookup)" class="doc doc-heading doc-heading-parameter">                  <code>custom_color_lookup</code>
 <a href="#supervision.annotators.core.TraceAnnotator.annotate(custom_color_lookup)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Optional[ndarray]</code>
+                  <code><span title="typing.Optional">Optional</span>[<span title="numpy.ndarray">ndarray</span>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -21126,7 +21210,7 @@ Allows to override the default color mapping strategy.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -21344,7 +21428,7 @@ supervision-annotator-examples/trace-annotator-example-purple.png" /></p>
 <a id="supervision.annotators.core.CropAnnotator"></a>
     <div class="doc doc-contents first">
             <p class="doc doc-class-bases">
-              Bases: <code>BaseAnnotator</code></p>
+              Bases: <code><span title="supervision.annotators.base.BaseAnnotator">BaseAnnotator</span></code></p>
 
 
         <p>A class for drawing scaled up crops of detections on the scene.</p>
@@ -21687,7 +21771,7 @@ supervision-annotator-examples/trace-annotator-example-purple.png" /></p>
 <h4 id="supervision.annotators.core.CropAnnotator.__init__(position)" class="doc doc-heading doc-heading-parameter">                  <code>position</code>
 <a href="#supervision.annotators.core.CropAnnotator.__init__(position)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Position</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.geometry.core.Position" href="../../utils/geometry/#supervision.geometry.core.Position">Position</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -21696,7 +21780,7 @@ part of the detection in the scene.</p>
               </div>
             </td>
             <td>
-                  <code>TOP_CENTER</code>
+                  <code><span title="supervision.geometry.core.Position.TOP_CENTER">TOP_CENTER</span></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -21722,7 +21806,7 @@ allowing for a closer view of the detection.</p>
 <h4 id="supervision.annotators.core.CropAnnotator.__init__(border_color)" class="doc doc-heading doc-heading-parameter">                  <code>border_color</code>
 <a href="#supervision.annotators.core.CropAnnotator.__init__(border_color)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Union[Color, ColorPalette]</code>
+                  <code><span title="typing.Union">Union</span>[<a class="autorefs autorefs-internal" title="supervision.draw.color.Color" href="../../utils/draw/#supervision.draw.color.Color">Color</a>, <a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette" href="../../utils/draw/#supervision.draw.color.ColorPalette">ColorPalette</a>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -21731,7 +21815,7 @@ use for annotating border around the cropped area.</p>
               </div>
             </td>
             <td>
-                  <code>DEFAULT</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.draw.color.ColorPalette.DEFAULT" href="../../utils/draw/#supervision.draw.color.ColorPalette.DEFAULT">DEFAULT</a></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -21755,7 +21839,7 @@ use for annotating border around the cropped area.</p>
 <h4 id="supervision.annotators.core.CropAnnotator.__init__(border_color_lookup)" class="doc doc-heading doc-heading-parameter">                  <code>border_color_lookup</code>
 <a href="#supervision.annotators.core.CropAnnotator.__init__(border_color_lookup)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ColorLookup</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.annotators.utils.ColorLookup" href="#supervision.annotators.utils.ColorLookup">ColorLookup</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -21764,7 +21848,7 @@ annotations. Options are <code>INDEX</code>, <code>CLASS</code>, <code>TRACK</co
               </div>
             </td>
             <td>
-                  <code>CLASS</code>
+                  <code><span title="supervision.annotators.utils.ColorLookup.CLASS">CLASS</span></code>
             </td>
           </tr>
       </tbody>
@@ -21862,7 +21946,7 @@ onto the scene at the specified position.</p>
 <h4 id="supervision.annotators.core.CropAnnotator.annotate(scene)" class="doc doc-heading doc-heading-parameter">                  <code>scene</code>
 <a href="#supervision.annotators.core.CropAnnotator.annotate(scene)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -21880,7 +21964,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.CropAnnotator.annotate(detections)" class="doc doc-heading doc-heading-parameter">                  <code>detections</code>
 <a href="#supervision.annotators.core.CropAnnotator.annotate(detections)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Detections</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.detection.core.Detections" href="../core/#supervision.detection.core.Detections">Detections</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -21896,7 +21980,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.CropAnnotator.annotate(custom_color_lookup)" class="doc doc-heading doc-heading-parameter">                  <code>custom_color_lookup</code>
 <a href="#supervision.annotators.core.CropAnnotator.annotate(custom_color_lookup)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Optional[ndarray]</code>
+                  <code><span title="typing.Optional">Optional</span>[<span title="numpy.ndarray">ndarray</span>]</code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -21923,7 +22007,7 @@ Allows to override the default color mapping strategy.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -22117,7 +22201,7 @@ Allows to override the default color mapping strategy.</p>
 <a id="supervision.annotators.core.BackgroundOverlayAnnotator"></a>
     <div class="doc doc-contents first">
             <p class="doc doc-class-bases">
-              Bases: <code>BaseAnnotator</code></p>
+              Bases: <code><span title="supervision.annotators.base.BaseAnnotator">BaseAnnotator</span></code></p>
 
 
         <p>A class for drawing a colored overlay on the background of an image outside
@@ -22340,7 +22424,7 @@ If masks are not provided, the background is colored outside the bounding boxes.
 <h4 id="supervision.annotators.core.BackgroundOverlayAnnotator.__init__(color)" class="doc doc-heading doc-heading-parameter">                  <code>color</code>
 <a href="#supervision.annotators.core.BackgroundOverlayAnnotator.__init__(color)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Color</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.draw.color.Color" href="../../utils/draw/#supervision.draw.color.Color">Color</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -22348,7 +22432,7 @@ If masks are not provided, the background is colored outside the bounding boxes.
               </div>
             </td>
             <td>
-                  <code>BLACK</code>
+                  <code><span title="supervision.draw.color.Color.BLACK">BLACK</span></code>
             </td>
           </tr>
           <tr class="doc-section-item">
@@ -22456,7 +22540,7 @@ masks are provided in the supplied sv.Detections.</p>
 <h4 id="supervision.annotators.core.BackgroundOverlayAnnotator.annotate(scene)" class="doc doc-heading doc-heading-parameter">                  <code>scene</code>
 <a href="#supervision.annotators.core.BackgroundOverlayAnnotator.annotate(scene)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -22474,7 +22558,7 @@ or <code>PIL.Image.Image</code>.</p>
 <h4 id="supervision.annotators.core.BackgroundOverlayAnnotator.annotate(detections)" class="doc doc-heading doc-heading-parameter">                  <code>detections</code>
 <a href="#supervision.annotators.core.BackgroundOverlayAnnotator.annotate(detections)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
-                  <code>Detections</code>
+                  <code><a class="autorefs autorefs-internal" title="supervision.detection.core.Detections" href="../core/#supervision.detection.core.Detections">Detections</a></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -22500,7 +22584,7 @@ or <code>PIL.Image.Image</code>.</p>
       <tbody>
           <tr class="doc-section-item">
             <td>
-                  <code>ImageType</code>
+                  <code><span title="supervision.annotators.base.ImageType">ImageType</span></code>
             </td>
             <td>
               <div class="doc-md-description">
@@ -22651,7 +22735,7 @@ supervision-annotator-examples/background-color-annotator-example-purple.png" />
 <a id="supervision.annotators.utils.ColorLookup"></a>
     <div class="doc doc-contents first">
             <p class="doc doc-class-bases">
-              Bases: <code>Enum</code></p>
+              Bases: <code><span title="enum.Enum">Enum</span></code></p>
 
 
         <p>Enumeration class to define strategies for mapping colors to annotations.</p>
@@ -22990,7 +23074,7 @@ supervision-annotator-examples/background-color-annotator-example-purple.png" />
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tracking", "content.code.copy", "content.action.edit", "content.tooltips", "content.code.annotate", "navigation.tabs"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.525ec568.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
         <script src="https://widget.kapa.ai/kapa-widget.bundle.js"></script>
       
