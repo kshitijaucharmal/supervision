@@ -2569,9 +2569,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#supervision.annotators.core.LabelAnnotator.__init__(smart_positions)" class="md-nav__link">
+  <a href="#supervision.annotators.core.LabelAnnotator.__init__(smart_position)" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-parameter"></code>&nbsp;smart_positions
+      <code class="doc-symbol doc-symbol-toc doc-symbol-parameter"></code>&nbsp;smart_position
     </span>
   </a>
   
@@ -2740,9 +2740,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#supervision.annotators.core.RichLabelAnnotator.__init__(smart_positions)" class="md-nav__link">
+  <a href="#supervision.annotators.core.RichLabelAnnotator.__init__(smart_position)" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-parameter"></code>&nbsp;smart_positions
+      <code class="doc-symbol doc-symbol-toc doc-symbol-parameter"></code>&nbsp;smart_position
     </span>
   </a>
   
@@ -6422,9 +6422,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#supervision.annotators.core.LabelAnnotator.__init__(smart_positions)" class="md-nav__link">
+  <a href="#supervision.annotators.core.LabelAnnotator.__init__(smart_position)" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-parameter"></code>&nbsp;smart_positions
+      <code class="doc-symbol doc-symbol-toc doc-symbol-parameter"></code>&nbsp;smart_position
     </span>
   </a>
   
@@ -6593,9 +6593,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#supervision.annotators.core.RichLabelAnnotator.__init__(smart_positions)" class="md-nav__link">
+  <a href="#supervision.annotators.core.RichLabelAnnotator.__init__(smart_position)" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-parameter"></code>&nbsp;smart_positions
+      <code class="doc-symbol doc-symbol-toc doc-symbol-parameter"></code>&nbsp;smart_position
     </span>
   </a>
   
@@ -17368,7 +17368,7 @@ supervision-annotator-examples/polygon-annotator-example-purple.png" /></p>
 <a id="__codelineno-0-1056" name="__codelineno-0-1056"></a>        <span class="n">text_position</span><span class="p">:</span> <span class="n">Position</span> <span class="o">=</span> <span class="n">Position</span><span class="o">.</span><span class="n">TOP_LEFT</span><span class="p">,</span>
 <a id="__codelineno-0-1057" name="__codelineno-0-1057"></a>        <span class="n">color_lookup</span><span class="p">:</span> <span class="n">ColorLookup</span> <span class="o">=</span> <span class="n">ColorLookup</span><span class="o">.</span><span class="n">CLASS</span><span class="p">,</span>
 <a id="__codelineno-0-1058" name="__codelineno-0-1058"></a>        <span class="n">border_radius</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
-<a id="__codelineno-0-1059" name="__codelineno-0-1059"></a>        <span class="n">smart_positions</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+<a id="__codelineno-0-1059" name="__codelineno-0-1059"></a>        <span class="n">smart_position</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
 <a id="__codelineno-0-1060" name="__codelineno-0-1060"></a>    <span class="p">):</span>
 <a id="__codelineno-0-1061" name="__codelineno-0-1061"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <a id="__codelineno-0-1062" name="__codelineno-0-1062"></a><span class="sd">        Args:</span>
@@ -17385,7 +17385,7 @@ supervision-annotator-examples/polygon-annotator-example-purple.png" /></p>
 <a id="__codelineno-0-1073" name="__codelineno-0-1073"></a><span class="sd">                Options are `INDEX`, `CLASS`, `TRACK`.</span>
 <a id="__codelineno-0-1074" name="__codelineno-0-1074"></a><span class="sd">            border_radius (int): The radius to apply round edges. If the selected</span>
 <a id="__codelineno-0-1075" name="__codelineno-0-1075"></a><span class="sd">                value is higher than the lower dimension, width or height, is clipped.</span>
-<a id="__codelineno-0-1076" name="__codelineno-0-1076"></a><span class="sd">            smart_positions (bool): Spread out the labels to avoid overlapping.</span>
+<a id="__codelineno-0-1076" name="__codelineno-0-1076"></a><span class="sd">            smart_position (bool): Spread out the labels to avoid overlapping.</span>
 <a id="__codelineno-0-1077" name="__codelineno-0-1077"></a><span class="sd">        &quot;&quot;&quot;</span>
 <a id="__codelineno-0-1078" name="__codelineno-0-1078"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">border_radius</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">border_radius</span>
 <a id="__codelineno-0-1079" name="__codelineno-0-1079"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">color</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">Color</span><span class="p">,</span> <span class="n">ColorPalette</span><span class="p">]</span> <span class="o">=</span> <span class="n">color</span>
@@ -17395,7 +17395,7 @@ supervision-annotator-examples/polygon-annotator-example-purple.png" /></p>
 <a id="__codelineno-0-1083" name="__codelineno-0-1083"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">text_padding</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">text_padding</span>
 <a id="__codelineno-0-1084" name="__codelineno-0-1084"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">text_anchor</span><span class="p">:</span> <span class="n">Position</span> <span class="o">=</span> <span class="n">text_position</span>
 <a id="__codelineno-0-1085" name="__codelineno-0-1085"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">color_lookup</span><span class="p">:</span> <span class="n">ColorLookup</span> <span class="o">=</span> <span class="n">color_lookup</span>
-<a id="__codelineno-0-1086" name="__codelineno-0-1086"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">smart_positions</span> <span class="o">=</span> <span class="n">smart_positions</span>
+<a id="__codelineno-0-1086" name="__codelineno-0-1086"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">smart_position</span> <span class="o">=</span> <span class="n">smart_position</span>
 <a id="__codelineno-0-1087" name="__codelineno-0-1087"></a>
 <a id="__codelineno-0-1088" name="__codelineno-0-1088"></a>    <span class="nd">@ensure_cv2_image_for_annotation</span>
 <a id="__codelineno-0-1089" name="__codelineno-0-1089"></a>    <span class="k">def</span> <span class="nf">annotate</span><span class="p">(</span>
@@ -17453,7 +17453,7 @@ supervision-annotator-examples/polygon-annotator-example-purple.png" /></p>
 <a id="__codelineno-0-1141" name="__codelineno-0-1141"></a>        <span class="n">label_properties</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_label_properties</span><span class="p">(</span><span class="n">detections</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span>
 <a id="__codelineno-0-1142" name="__codelineno-0-1142"></a>        <span class="n">xyxy</span> <span class="o">=</span> <span class="n">label_properties</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">4</span><span class="p">]</span>
 <a id="__codelineno-0-1143" name="__codelineno-0-1143"></a>
-<a id="__codelineno-0-1144" name="__codelineno-0-1144"></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">smart_positions</span><span class="p">:</span>
+<a id="__codelineno-0-1144" name="__codelineno-0-1144"></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">smart_position</span><span class="p">:</span>
 <a id="__codelineno-0-1145" name="__codelineno-0-1145"></a>            <span class="n">xyxy</span> <span class="o">=</span> <span class="n">spread_out_boxes</span><span class="p">(</span><span class="n">xyxy</span><span class="p">)</span>
 <a id="__codelineno-0-1146" name="__codelineno-0-1146"></a>            <span class="n">label_properties</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="n">xyxy</span>
 <a id="__codelineno-0-1147" name="__codelineno-0-1147"></a>
@@ -17644,7 +17644,7 @@ supervision-annotator-examples/polygon-annotator-example-purple.png" /></p>
 
 
 <h3 id="supervision.annotators.core.LabelAnnotator.__init__" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">ColorPalette</span><span class="o">.</span><span class="n">DEFAULT</span><span class="p">,</span> <span class="n">text_color</span><span class="o">=</span><span class="n">Color</span><span class="o">.</span><span class="n">WHITE</span><span class="p">,</span> <span class="n">text_scale</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">text_thickness</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">text_padding</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">text_position</span><span class="o">=</span><span class="n">Position</span><span class="o">.</span><span class="n">TOP_LEFT</span><span class="p">,</span> <span class="n">color_lookup</span><span class="o">=</span><span class="n">ColorLookup</span><span class="o">.</span><span class="n">CLASS</span><span class="p">,</span> <span class="n">border_radius</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">smart_positions</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">ColorPalette</span><span class="o">.</span><span class="n">DEFAULT</span><span class="p">,</span> <span class="n">text_color</span><span class="o">=</span><span class="n">Color</span><span class="o">.</span><span class="n">WHITE</span><span class="p">,</span> <span class="n">text_scale</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">text_thickness</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">text_padding</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">text_position</span><span class="o">=</span><span class="n">Position</span><span class="o">.</span><span class="n">TOP_LEFT</span><span class="p">,</span> <span class="n">color_lookup</span><span class="o">=</span><span class="n">ColorLookup</span><span class="o">.</span><span class="n">CLASS</span><span class="p">,</span> <span class="n">border_radius</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">smart_position</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
 
 <a href="#supervision.annotators.core.LabelAnnotator.__init__" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -17799,8 +17799,8 @@ value is higher than the lower dimension, width or height, is clipped.</p>
           </tr>
           <tr class="doc-section-item">
             <td>
-<h4 id="supervision.annotators.core.LabelAnnotator.__init__(smart_positions)" class="doc doc-heading doc-heading-parameter">                  <code>smart_positions</code>
-<a href="#supervision.annotators.core.LabelAnnotator.__init__(smart_positions)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
+<h4 id="supervision.annotators.core.LabelAnnotator.__init__(smart_position)" class="doc doc-heading doc-heading-parameter">                  <code>smart_position</code>
+<a href="#supervision.annotators.core.LabelAnnotator.__init__(smart_position)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -17865,7 +17865,7 @@ value is higher than the lower dimension, width or height, is clipped.</p>
 <a id="__codelineno-0-1056" name="__codelineno-0-1056"></a>    <span class="n">text_position</span><span class="p">:</span> <span class="n">Position</span> <span class="o">=</span> <span class="n">Position</span><span class="o">.</span><span class="n">TOP_LEFT</span><span class="p">,</span>
 <a id="__codelineno-0-1057" name="__codelineno-0-1057"></a>    <span class="n">color_lookup</span><span class="p">:</span> <span class="n">ColorLookup</span> <span class="o">=</span> <span class="n">ColorLookup</span><span class="o">.</span><span class="n">CLASS</span><span class="p">,</span>
 <a id="__codelineno-0-1058" name="__codelineno-0-1058"></a>    <span class="n">border_radius</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
-<a id="__codelineno-0-1059" name="__codelineno-0-1059"></a>    <span class="n">smart_positions</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+<a id="__codelineno-0-1059" name="__codelineno-0-1059"></a>    <span class="n">smart_position</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
 <a id="__codelineno-0-1060" name="__codelineno-0-1060"></a><span class="p">):</span>
 <a id="__codelineno-0-1061" name="__codelineno-0-1061"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <a id="__codelineno-0-1062" name="__codelineno-0-1062"></a><span class="sd">    Args:</span>
@@ -17882,7 +17882,7 @@ value is higher than the lower dimension, width or height, is clipped.</p>
 <a id="__codelineno-0-1073" name="__codelineno-0-1073"></a><span class="sd">            Options are `INDEX`, `CLASS`, `TRACK`.</span>
 <a id="__codelineno-0-1074" name="__codelineno-0-1074"></a><span class="sd">        border_radius (int): The radius to apply round edges. If the selected</span>
 <a id="__codelineno-0-1075" name="__codelineno-0-1075"></a><span class="sd">            value is higher than the lower dimension, width or height, is clipped.</span>
-<a id="__codelineno-0-1076" name="__codelineno-0-1076"></a><span class="sd">        smart_positions (bool): Spread out the labels to avoid overlapping.</span>
+<a id="__codelineno-0-1076" name="__codelineno-0-1076"></a><span class="sd">        smart_position (bool): Spread out the labels to avoid overlapping.</span>
 <a id="__codelineno-0-1077" name="__codelineno-0-1077"></a><span class="sd">    &quot;&quot;&quot;</span>
 <a id="__codelineno-0-1078" name="__codelineno-0-1078"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">border_radius</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">border_radius</span>
 <a id="__codelineno-0-1079" name="__codelineno-0-1079"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">color</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">Color</span><span class="p">,</span> <span class="n">ColorPalette</span><span class="p">]</span> <span class="o">=</span> <span class="n">color</span>
@@ -17892,7 +17892,7 @@ value is higher than the lower dimension, width or height, is clipped.</p>
 <a id="__codelineno-0-1083" name="__codelineno-0-1083"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">text_padding</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">text_padding</span>
 <a id="__codelineno-0-1084" name="__codelineno-0-1084"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">text_anchor</span><span class="p">:</span> <span class="n">Position</span> <span class="o">=</span> <span class="n">text_position</span>
 <a id="__codelineno-0-1085" name="__codelineno-0-1085"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">color_lookup</span><span class="p">:</span> <span class="n">ColorLookup</span> <span class="o">=</span> <span class="n">color_lookup</span>
-<a id="__codelineno-0-1086" name="__codelineno-0-1086"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">smart_positions</span> <span class="o">=</span> <span class="n">smart_positions</span>
+<a id="__codelineno-0-1086" name="__codelineno-0-1086"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">smart_position</span> <span class="o">=</span> <span class="n">smart_position</span>
 </code></pre></div></td></tr></table></div>
             </details>
     </div>
@@ -18168,7 +18168,7 @@ supervision-annotator-examples/label-annotator-example-purple.png" /></p>
 <a id="__codelineno-0-1141" name="__codelineno-0-1141"></a>    <span class="n">label_properties</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_label_properties</span><span class="p">(</span><span class="n">detections</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span>
 <a id="__codelineno-0-1142" name="__codelineno-0-1142"></a>    <span class="n">xyxy</span> <span class="o">=</span> <span class="n">label_properties</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">4</span><span class="p">]</span>
 <a id="__codelineno-0-1143" name="__codelineno-0-1143"></a>
-<a id="__codelineno-0-1144" name="__codelineno-0-1144"></a>    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">smart_positions</span><span class="p">:</span>
+<a id="__codelineno-0-1144" name="__codelineno-0-1144"></a>    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">smart_position</span><span class="p">:</span>
 <a id="__codelineno-0-1145" name="__codelineno-0-1145"></a>        <span class="n">xyxy</span> <span class="o">=</span> <span class="n">spread_out_boxes</span><span class="p">(</span><span class="n">xyxy</span><span class="p">)</span>
 <a id="__codelineno-0-1146" name="__codelineno-0-1146"></a>        <span class="n">label_properties</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="n">xyxy</span>
 <a id="__codelineno-0-1147" name="__codelineno-0-1147"></a>
@@ -18468,7 +18468,7 @@ with support for Unicode characters by using a custom font.</p>
 <a id="__codelineno-0-1331" name="__codelineno-0-1331"></a>        <span class="n">text_position</span><span class="p">:</span> <span class="n">Position</span> <span class="o">=</span> <span class="n">Position</span><span class="o">.</span><span class="n">TOP_LEFT</span><span class="p">,</span>
 <a id="__codelineno-0-1332" name="__codelineno-0-1332"></a>        <span class="n">color_lookup</span><span class="p">:</span> <span class="n">ColorLookup</span> <span class="o">=</span> <span class="n">ColorLookup</span><span class="o">.</span><span class="n">CLASS</span><span class="p">,</span>
 <a id="__codelineno-0-1333" name="__codelineno-0-1333"></a>        <span class="n">border_radius</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
-<a id="__codelineno-0-1334" name="__codelineno-0-1334"></a>        <span class="n">smart_positions</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+<a id="__codelineno-0-1334" name="__codelineno-0-1334"></a>        <span class="n">smart_position</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
 <a id="__codelineno-0-1335" name="__codelineno-0-1335"></a>    <span class="p">):</span>
 <a id="__codelineno-0-1336" name="__codelineno-0-1336"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <a id="__codelineno-0-1337" name="__codelineno-0-1337"></a><span class="sd">        Args:</span>
@@ -18485,7 +18485,7 @@ with support for Unicode characters by using a custom font.</p>
 <a id="__codelineno-0-1348" name="__codelineno-0-1348"></a><span class="sd">                Options are `INDEX`, `CLASS`, `TRACK`.</span>
 <a id="__codelineno-0-1349" name="__codelineno-0-1349"></a><span class="sd">            border_radius (int): The radius to apply round edges. If the selected</span>
 <a id="__codelineno-0-1350" name="__codelineno-0-1350"></a><span class="sd">                value is higher than the lower dimension, width or height, is clipped.</span>
-<a id="__codelineno-0-1351" name="__codelineno-0-1351"></a><span class="sd">            smart_positions (bool): Spread out the labels to avoid overlapping.</span>
+<a id="__codelineno-0-1351" name="__codelineno-0-1351"></a><span class="sd">            smart_position (bool): Spread out the labels to avoid overlapping.</span>
 <a id="__codelineno-0-1352" name="__codelineno-0-1352"></a><span class="sd">        &quot;&quot;&quot;</span>
 <a id="__codelineno-0-1353" name="__codelineno-0-1353"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">color</span> <span class="o">=</span> <span class="n">color</span>
 <a id="__codelineno-0-1354" name="__codelineno-0-1354"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">text_color</span> <span class="o">=</span> <span class="n">text_color</span>
@@ -18493,7 +18493,7 @@ with support for Unicode characters by using a custom font.</p>
 <a id="__codelineno-0-1356" name="__codelineno-0-1356"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">text_anchor</span> <span class="o">=</span> <span class="n">text_position</span>
 <a id="__codelineno-0-1357" name="__codelineno-0-1357"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">color_lookup</span> <span class="o">=</span> <span class="n">color_lookup</span>
 <a id="__codelineno-0-1358" name="__codelineno-0-1358"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">border_radius</span> <span class="o">=</span> <span class="n">border_radius</span>
-<a id="__codelineno-0-1359" name="__codelineno-0-1359"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">smart_positions</span> <span class="o">=</span> <span class="n">smart_positions</span>
+<a id="__codelineno-0-1359" name="__codelineno-0-1359"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">smart_position</span> <span class="o">=</span> <span class="n">smart_position</span>
 <a id="__codelineno-0-1360" name="__codelineno-0-1360"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">font</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_load_font</span><span class="p">(</span><span class="n">font_size</span><span class="p">,</span> <span class="n">font_path</span><span class="p">)</span>
 <a id="__codelineno-0-1361" name="__codelineno-0-1361"></a>
 <a id="__codelineno-0-1362" name="__codelineno-0-1362"></a>    <span class="nd">@ensure_pil_image_for_annotation</span>
@@ -18551,7 +18551,7 @@ with support for Unicode characters by using a custom font.</p>
 <a id="__codelineno-0-1414" name="__codelineno-0-1414"></a>        <span class="n">label_properties</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_label_properties</span><span class="p">(</span><span class="n">draw</span><span class="p">,</span> <span class="n">detections</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span>
 <a id="__codelineno-0-1415" name="__codelineno-0-1415"></a>        <span class="n">xyxy</span> <span class="o">=</span> <span class="n">label_properties</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">4</span><span class="p">]</span>
 <a id="__codelineno-0-1416" name="__codelineno-0-1416"></a>
-<a id="__codelineno-0-1417" name="__codelineno-0-1417"></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">smart_positions</span><span class="p">:</span>
+<a id="__codelineno-0-1417" name="__codelineno-0-1417"></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">smart_position</span><span class="p">:</span>
 <a id="__codelineno-0-1418" name="__codelineno-0-1418"></a>            <span class="n">xyxy</span> <span class="o">=</span> <span class="n">spread_out_boxes</span><span class="p">(</span><span class="n">xyxy</span><span class="p">)</span>
 <a id="__codelineno-0-1419" name="__codelineno-0-1419"></a>            <span class="n">label_properties</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="n">xyxy</span>
 <a id="__codelineno-0-1420" name="__codelineno-0-1420"></a>
@@ -18705,7 +18705,7 @@ with support for Unicode characters by using a custom font.</p>
 
 
 <h3 id="supervision.annotators.core.RichLabelAnnotator.__init__" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">ColorPalette</span><span class="o">.</span><span class="n">DEFAULT</span><span class="p">,</span> <span class="n">text_color</span><span class="o">=</span><span class="n">Color</span><span class="o">.</span><span class="n">WHITE</span><span class="p">,</span> <span class="n">font_path</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">text_padding</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">text_position</span><span class="o">=</span><span class="n">Position</span><span class="o">.</span><span class="n">TOP_LEFT</span><span class="p">,</span> <span class="n">color_lookup</span><span class="o">=</span><span class="n">ColorLookup</span><span class="o">.</span><span class="n">CLASS</span><span class="p">,</span> <span class="n">border_radius</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">smart_positions</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">ColorPalette</span><span class="o">.</span><span class="n">DEFAULT</span><span class="p">,</span> <span class="n">text_color</span><span class="o">=</span><span class="n">Color</span><span class="o">.</span><span class="n">WHITE</span><span class="p">,</span> <span class="n">font_path</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">text_padding</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">text_position</span><span class="o">=</span><span class="n">Position</span><span class="o">.</span><span class="n">TOP_LEFT</span><span class="p">,</span> <span class="n">color_lookup</span><span class="o">=</span><span class="n">ColorLookup</span><span class="o">.</span><span class="n">CLASS</span><span class="p">,</span> <span class="n">border_radius</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">smart_position</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
 
 <a href="#supervision.annotators.core.RichLabelAnnotator.__init__" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -18860,8 +18860,8 @@ value is higher than the lower dimension, width or height, is clipped.</p>
           </tr>
           <tr class="doc-section-item">
             <td>
-<h4 id="supervision.annotators.core.RichLabelAnnotator.__init__(smart_positions)" class="doc doc-heading doc-heading-parameter">                  <code>smart_positions</code>
-<a href="#supervision.annotators.core.RichLabelAnnotator.__init__(smart_positions)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
+<h4 id="supervision.annotators.core.RichLabelAnnotator.__init__(smart_position)" class="doc doc-heading doc-heading-parameter">                  <code>smart_position</code>
+<a href="#supervision.annotators.core.RichLabelAnnotator.__init__(smart_position)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -18925,7 +18925,7 @@ value is higher than the lower dimension, width or height, is clipped.</p>
 <a id="__codelineno-0-1331" name="__codelineno-0-1331"></a>    <span class="n">text_position</span><span class="p">:</span> <span class="n">Position</span> <span class="o">=</span> <span class="n">Position</span><span class="o">.</span><span class="n">TOP_LEFT</span><span class="p">,</span>
 <a id="__codelineno-0-1332" name="__codelineno-0-1332"></a>    <span class="n">color_lookup</span><span class="p">:</span> <span class="n">ColorLookup</span> <span class="o">=</span> <span class="n">ColorLookup</span><span class="o">.</span><span class="n">CLASS</span><span class="p">,</span>
 <a id="__codelineno-0-1333" name="__codelineno-0-1333"></a>    <span class="n">border_radius</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
-<a id="__codelineno-0-1334" name="__codelineno-0-1334"></a>    <span class="n">smart_positions</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+<a id="__codelineno-0-1334" name="__codelineno-0-1334"></a>    <span class="n">smart_position</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
 <a id="__codelineno-0-1335" name="__codelineno-0-1335"></a><span class="p">):</span>
 <a id="__codelineno-0-1336" name="__codelineno-0-1336"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <a id="__codelineno-0-1337" name="__codelineno-0-1337"></a><span class="sd">    Args:</span>
@@ -18942,7 +18942,7 @@ value is higher than the lower dimension, width or height, is clipped.</p>
 <a id="__codelineno-0-1348" name="__codelineno-0-1348"></a><span class="sd">            Options are `INDEX`, `CLASS`, `TRACK`.</span>
 <a id="__codelineno-0-1349" name="__codelineno-0-1349"></a><span class="sd">        border_radius (int): The radius to apply round edges. If the selected</span>
 <a id="__codelineno-0-1350" name="__codelineno-0-1350"></a><span class="sd">            value is higher than the lower dimension, width or height, is clipped.</span>
-<a id="__codelineno-0-1351" name="__codelineno-0-1351"></a><span class="sd">        smart_positions (bool): Spread out the labels to avoid overlapping.</span>
+<a id="__codelineno-0-1351" name="__codelineno-0-1351"></a><span class="sd">        smart_position (bool): Spread out the labels to avoid overlapping.</span>
 <a id="__codelineno-0-1352" name="__codelineno-0-1352"></a><span class="sd">    &quot;&quot;&quot;</span>
 <a id="__codelineno-0-1353" name="__codelineno-0-1353"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">color</span> <span class="o">=</span> <span class="n">color</span>
 <a id="__codelineno-0-1354" name="__codelineno-0-1354"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">text_color</span> <span class="o">=</span> <span class="n">text_color</span>
@@ -18950,7 +18950,7 @@ value is higher than the lower dimension, width or height, is clipped.</p>
 <a id="__codelineno-0-1356" name="__codelineno-0-1356"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">text_anchor</span> <span class="o">=</span> <span class="n">text_position</span>
 <a id="__codelineno-0-1357" name="__codelineno-0-1357"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">color_lookup</span> <span class="o">=</span> <span class="n">color_lookup</span>
 <a id="__codelineno-0-1358" name="__codelineno-0-1358"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">border_radius</span> <span class="o">=</span> <span class="n">border_radius</span>
-<a id="__codelineno-0-1359" name="__codelineno-0-1359"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">smart_positions</span> <span class="o">=</span> <span class="n">smart_positions</span>
+<a id="__codelineno-0-1359" name="__codelineno-0-1359"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">smart_position</span> <span class="o">=</span> <span class="n">smart_position</span>
 <a id="__codelineno-0-1360" name="__codelineno-0-1360"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">font</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_load_font</span><span class="p">(</span><span class="n">font_size</span><span class="p">,</span> <span class="n">font_path</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
             </details>
@@ -19224,7 +19224,7 @@ or <code>PIL.Image.Image</code>)</p>
 <a id="__codelineno-0-1414" name="__codelineno-0-1414"></a>    <span class="n">label_properties</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_label_properties</span><span class="p">(</span><span class="n">draw</span><span class="p">,</span> <span class="n">detections</span><span class="p">,</span> <span class="n">labels</span><span class="p">)</span>
 <a id="__codelineno-0-1415" name="__codelineno-0-1415"></a>    <span class="n">xyxy</span> <span class="o">=</span> <span class="n">label_properties</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">4</span><span class="p">]</span>
 <a id="__codelineno-0-1416" name="__codelineno-0-1416"></a>
-<a id="__codelineno-0-1417" name="__codelineno-0-1417"></a>    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">smart_positions</span><span class="p">:</span>
+<a id="__codelineno-0-1417" name="__codelineno-0-1417"></a>    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">smart_position</span><span class="p">:</span>
 <a id="__codelineno-0-1418" name="__codelineno-0-1418"></a>        <span class="n">xyxy</span> <span class="o">=</span> <span class="n">spread_out_boxes</span><span class="p">(</span><span class="n">xyxy</span><span class="p">)</span>
 <a id="__codelineno-0-1419" name="__codelineno-0-1419"></a>        <span class="n">label_properties</span><span class="p">[:,</span> <span class="p">:</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="n">xyxy</span>
 <a id="__codelineno-0-1420" name="__codelineno-0-1420"></a>

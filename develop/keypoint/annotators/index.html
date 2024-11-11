@@ -1187,9 +1187,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#supervision.keypoint.annotators.VertexLabelAnnotator.__init__(smart_positions)" class="md-nav__link">
+  <a href="#supervision.keypoint.annotators.VertexLabelAnnotator.__init__(smart_position)" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-parameter"></code>&nbsp;smart_positions
+      <code class="doc-symbol doc-symbol-toc doc-symbol-parameter"></code>&nbsp;smart_position
     </span>
   </a>
   
@@ -2581,9 +2581,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#supervision.keypoint.annotators.VertexLabelAnnotator.__init__(smart_positions)" class="md-nav__link">
+  <a href="#supervision.keypoint.annotators.VertexLabelAnnotator.__init__(smart_position)" class="md-nav__link">
     <span class="md-ellipsis">
-      <code class="doc-symbol doc-symbol-toc doc-symbol-parameter"></code>&nbsp;smart_positions
+      <code class="doc-symbol doc-symbol-toc doc-symbol-parameter"></code>&nbsp;smart_position
     </span>
   </a>
   
@@ -4113,7 +4113,7 @@ points to determine the locations where the vertices should be drawn.</p>
 <a id="__codelineno-0-202" name="__codelineno-0-202"></a>        <span class="n">text_thickness</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
 <a id="__codelineno-0-203" name="__codelineno-0-203"></a>        <span class="n">text_padding</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
 <a id="__codelineno-0-204" name="__codelineno-0-204"></a>        <span class="n">border_radius</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
-<a id="__codelineno-0-205" name="__codelineno-0-205"></a>        <span class="n">smart_positions</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+<a id="__codelineno-0-205" name="__codelineno-0-205"></a>        <span class="n">smart_position</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
 <a id="__codelineno-0-206" name="__codelineno-0-206"></a>    <span class="p">):</span>
 <a id="__codelineno-0-207" name="__codelineno-0-207"></a><span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <a id="__codelineno-0-208" name="__codelineno-0-208"></a><span class="sd">        Args:</span>
@@ -4128,7 +4128,7 @@ points to determine the locations where the vertices should be drawn.</p>
 <a id="__codelineno-0-217" name="__codelineno-0-217"></a><span class="sd">            text_padding (int): The padding around the text.</span>
 <a id="__codelineno-0-218" name="__codelineno-0-218"></a><span class="sd">            border_radius (int): The radius of the rounded corners of the</span>
 <a id="__codelineno-0-219" name="__codelineno-0-219"></a><span class="sd">                boxes. Set to a high value to produce circles.</span>
-<a id="__codelineno-0-220" name="__codelineno-0-220"></a><span class="sd">            smart_positions (bool): Spread out the labels to avoid overlap.</span>
+<a id="__codelineno-0-220" name="__codelineno-0-220"></a><span class="sd">            smart_position (bool): Spread out the labels to avoid overlap.</span>
 <a id="__codelineno-0-221" name="__codelineno-0-221"></a><span class="sd">        &quot;&quot;&quot;</span>
 <a id="__codelineno-0-222" name="__codelineno-0-222"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">border_radius</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">border_radius</span>
 <a id="__codelineno-0-223" name="__codelineno-0-223"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">color</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">Color</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="n">Color</span><span class="p">]]</span> <span class="o">=</span> <span class="n">color</span>
@@ -4136,7 +4136,7 @@ points to determine the locations where the vertices should be drawn.</p>
 <a id="__codelineno-0-225" name="__codelineno-0-225"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">text_scale</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="n">text_scale</span>
 <a id="__codelineno-0-226" name="__codelineno-0-226"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">text_thickness</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">text_thickness</span>
 <a id="__codelineno-0-227" name="__codelineno-0-227"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">text_padding</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">text_padding</span>
-<a id="__codelineno-0-228" name="__codelineno-0-228"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">smart_positions</span> <span class="o">=</span> <span class="n">smart_positions</span>
+<a id="__codelineno-0-228" name="__codelineno-0-228"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">smart_position</span> <span class="o">=</span> <span class="n">smart_position</span>
 <a id="__codelineno-0-229" name="__codelineno-0-229"></a>
 <a id="__codelineno-0-230" name="__codelineno-0-230"></a>    <span class="k">def</span> <span class="nf">annotate</span><span class="p">(</span>
 <a id="__codelineno-0-231" name="__codelineno-0-231"></a>        <span class="bp">self</span><span class="p">,</span>
@@ -4273,7 +4273,7 @@ points to determine the locations where the vertices should be drawn.</p>
 <a id="__codelineno-0-362" name="__codelineno-0-362"></a>        <span class="p">)</span>
 <a id="__codelineno-0-363" name="__codelineno-0-363"></a>        <span class="n">xyxy_padded</span> <span class="o">=</span> <span class="n">pad_boxes</span><span class="p">(</span><span class="n">xyxy</span><span class="o">=</span><span class="n">xyxy</span><span class="p">,</span> <span class="n">px</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">text_padding</span><span class="p">)</span>
 <a id="__codelineno-0-364" name="__codelineno-0-364"></a>
-<a id="__codelineno-0-365" name="__codelineno-0-365"></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">smart_positions</span><span class="p">:</span>
+<a id="__codelineno-0-365" name="__codelineno-0-365"></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">smart_position</span><span class="p">:</span>
 <a id="__codelineno-0-366" name="__codelineno-0-366"></a>            <span class="n">xyxy_padded</span> <span class="o">=</span> <span class="n">spread_out_boxes</span><span class="p">(</span><span class="n">xyxy_padded</span><span class="p">)</span>
 <a id="__codelineno-0-367" name="__codelineno-0-367"></a>            <span class="n">xyxy</span> <span class="o">=</span> <span class="n">pad_boxes</span><span class="p">(</span><span class="n">xyxy</span><span class="o">=</span><span class="n">xyxy_padded</span><span class="p">,</span> <span class="n">px</span><span class="o">=-</span><span class="bp">self</span><span class="o">.</span><span class="n">text_padding</span><span class="p">)</span>
 <a id="__codelineno-0-368" name="__codelineno-0-368"></a>
@@ -4370,7 +4370,7 @@ points to determine the locations where the vertices should be drawn.</p>
 
 
 <h3 id="supervision.keypoint.annotators.VertexLabelAnnotator.__init__" class="doc doc-heading">
-<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">Color</span><span class="o">.</span><span class="n">ROBOFLOW</span><span class="p">,</span> <span class="n">text_color</span><span class="o">=</span><span class="n">Color</span><span class="o">.</span><span class="n">WHITE</span><span class="p">,</span> <span class="n">text_scale</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">text_thickness</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">text_padding</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">border_radius</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">smart_positions</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
+<code class="doc-symbol doc-symbol-heading doc-symbol-method"></code>            <code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">Color</span><span class="o">.</span><span class="n">ROBOFLOW</span><span class="p">,</span> <span class="n">text_color</span><span class="o">=</span><span class="n">Color</span><span class="o">.</span><span class="n">WHITE</span><span class="p">,</span> <span class="n">text_scale</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">text_thickness</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">text_padding</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">border_radius</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">smart_position</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span></code>
 
 <a href="#supervision.keypoint.annotators.VertexLabelAnnotator.__init__" class="headerlink" title="Permanent link">&para;</a></h3>
 
@@ -4493,8 +4493,8 @@ boxes. Set to a high value to produce circles.</p>
           </tr>
           <tr class="doc-section-item">
             <td>
-<h4 id="supervision.keypoint.annotators.VertexLabelAnnotator.__init__(smart_positions)" class="doc doc-heading doc-heading-parameter">                  <code>smart_positions</code>
-<a href="#supervision.keypoint.annotators.VertexLabelAnnotator.__init__(smart_positions)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
+<h4 id="supervision.keypoint.annotators.VertexLabelAnnotator.__init__(smart_position)" class="doc doc-heading doc-heading-parameter">                  <code>smart_position</code>
+<a href="#supervision.keypoint.annotators.VertexLabelAnnotator.__init__(smart_position)" class="headerlink" title="Permanent link">&para;</a></h4>            </td>
             <td>
                   <code>bool</code>
             </td>
@@ -4551,7 +4551,7 @@ boxes. Set to a high value to produce circles.</p>
 <a id="__codelineno-0-202" name="__codelineno-0-202"></a>    <span class="n">text_thickness</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span>
 <a id="__codelineno-0-203" name="__codelineno-0-203"></a>    <span class="n">text_padding</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span>
 <a id="__codelineno-0-204" name="__codelineno-0-204"></a>    <span class="n">border_radius</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
-<a id="__codelineno-0-205" name="__codelineno-0-205"></a>    <span class="n">smart_positions</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+<a id="__codelineno-0-205" name="__codelineno-0-205"></a>    <span class="n">smart_position</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
 <a id="__codelineno-0-206" name="__codelineno-0-206"></a><span class="p">):</span>
 <a id="__codelineno-0-207" name="__codelineno-0-207"></a><span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <a id="__codelineno-0-208" name="__codelineno-0-208"></a><span class="sd">    Args:</span>
@@ -4566,7 +4566,7 @@ boxes. Set to a high value to produce circles.</p>
 <a id="__codelineno-0-217" name="__codelineno-0-217"></a><span class="sd">        text_padding (int): The padding around the text.</span>
 <a id="__codelineno-0-218" name="__codelineno-0-218"></a><span class="sd">        border_radius (int): The radius of the rounded corners of the</span>
 <a id="__codelineno-0-219" name="__codelineno-0-219"></a><span class="sd">            boxes. Set to a high value to produce circles.</span>
-<a id="__codelineno-0-220" name="__codelineno-0-220"></a><span class="sd">        smart_positions (bool): Spread out the labels to avoid overlap.</span>
+<a id="__codelineno-0-220" name="__codelineno-0-220"></a><span class="sd">        smart_position (bool): Spread out the labels to avoid overlap.</span>
 <a id="__codelineno-0-221" name="__codelineno-0-221"></a><span class="sd">    &quot;&quot;&quot;</span>
 <a id="__codelineno-0-222" name="__codelineno-0-222"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">border_radius</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">border_radius</span>
 <a id="__codelineno-0-223" name="__codelineno-0-223"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">color</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="n">Color</span><span class="p">,</span> <span class="n">List</span><span class="p">[</span><span class="n">Color</span><span class="p">]]</span> <span class="o">=</span> <span class="n">color</span>
@@ -4574,7 +4574,7 @@ boxes. Set to a high value to produce circles.</p>
 <a id="__codelineno-0-225" name="__codelineno-0-225"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">text_scale</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="n">text_scale</span>
 <a id="__codelineno-0-226" name="__codelineno-0-226"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">text_thickness</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">text_thickness</span>
 <a id="__codelineno-0-227" name="__codelineno-0-227"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">text_padding</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="n">text_padding</span>
-<a id="__codelineno-0-228" name="__codelineno-0-228"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">smart_positions</span> <span class="o">=</span> <span class="n">smart_positions</span>
+<a id="__codelineno-0-228" name="__codelineno-0-228"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">smart_position</span> <span class="o">=</span> <span class="n">smart_position</span>
 </code></pre></div></td></tr></table></div>
             </details>
     </div>
@@ -5047,7 +5047,7 @@ supervision-annotator-examples/vertex-label-annotator-custom-example.png" /></p>
 <a id="__codelineno-0-362" name="__codelineno-0-362"></a>    <span class="p">)</span>
 <a id="__codelineno-0-363" name="__codelineno-0-363"></a>    <span class="n">xyxy_padded</span> <span class="o">=</span> <span class="n">pad_boxes</span><span class="p">(</span><span class="n">xyxy</span><span class="o">=</span><span class="n">xyxy</span><span class="p">,</span> <span class="n">px</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">text_padding</span><span class="p">)</span>
 <a id="__codelineno-0-364" name="__codelineno-0-364"></a>
-<a id="__codelineno-0-365" name="__codelineno-0-365"></a>    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">smart_positions</span><span class="p">:</span>
+<a id="__codelineno-0-365" name="__codelineno-0-365"></a>    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">smart_position</span><span class="p">:</span>
 <a id="__codelineno-0-366" name="__codelineno-0-366"></a>        <span class="n">xyxy_padded</span> <span class="o">=</span> <span class="n">spread_out_boxes</span><span class="p">(</span><span class="n">xyxy_padded</span><span class="p">)</span>
 <a id="__codelineno-0-367" name="__codelineno-0-367"></a>        <span class="n">xyxy</span> <span class="o">=</span> <span class="n">pad_boxes</span><span class="p">(</span><span class="n">xyxy</span><span class="o">=</span><span class="n">xyxy_padded</span><span class="p">,</span> <span class="n">px</span><span class="o">=-</span><span class="bp">self</span><span class="o">.</span><span class="n">text_padding</span><span class="p">)</span>
 <a id="__codelineno-0-368" name="__codelineno-0-368"></a>
