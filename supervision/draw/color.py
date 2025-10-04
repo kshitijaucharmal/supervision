@@ -57,7 +57,7 @@ def _validate_color_hex(color_hex: str):
     color_hex = color_hex.lstrip("#")
     if not all(c in "0123456789abcdefABCDEF" for c in color_hex):
         raise ValueError("Invalid characters in color hash")
-    if len(color_hex) not in (3, 6):
+    if len(color_hex) not in (3, 4, 6, 8):
         raise ValueError("Invalid length of color hash")
 
 
@@ -97,6 +97,7 @@ class Color:
     r: int
     g: int
     b: int
+    a: int = 255
 
     @classmethod
     def from_hex(cls, color_hex: str) -> Color:
@@ -125,10 +126,15 @@ class Color:
         """
         _validate_color_hex(color_hex)
         color_hex = color_hex.lstrip("#")
-        if len(color_hex) == 3:
+        if len(color_hex) in (3, 4):
             color_hex = "".join(c * 2 for c in color_hex)
-        r, g, b = (int(color_hex[i : i + 2], 16) for i in range(0, 6, 2))
-        return cls(r, g, b)
+        if len(color_hex) == 6:
+            r, g, b = (int(color_hex[i : i + 2], 16) for i in range(0, 6, 2))
+            a = 255
+        elif len(color_hex) == 8:
+            r, g, b, a = (int(color_hex[i : i + 2], 16) for i in range(0, 8, 2))
+
+        return cls(r, g, b, a)
 
     @classmethod
     def from_rgb_tuple(cls, color_tuple: tuple[int, int, int]) -> Color:
@@ -191,6 +197,8 @@ class Color:
             # '#ffff00'
             ```
         """
+        if self.a != 255:
+            return f"#{self.r:02x}{self.g:02x}{self.b:02x}{self.a:02x}"
         return f"#{self.r:02x}{self.g:02x}{self.b:02x}"
 
     def as_rgb(self) -> tuple[int, int, int]:
@@ -209,6 +217,23 @@ class Color:
             ```
         """
         return self.r, self.g, self.b
+
+    def as_rgba(self) -> tuple[int, int, int, int]:
+        """
+        Returns the color as an RGBA tuple.
+
+        Returns:
+            Tuple[int, int, int, int]: RGBA tuple.
+
+        Example:
+            ```python
+            import supervision as sv
+
+            sv.Color(r=255, g=255, b=0, a=128).as_rgba()
+            # (255, 255, 0, 128)
+            ```
+        """
+        return self.r, self.g, self.b, self.a
 
     def as_bgr(self) -> tuple[int, int, int]:
         """
